@@ -166,7 +166,7 @@
                                                 <td>${{$orders->discount}}</td>
                                                 <td>${{$orders->tax}}</td>
                                                 <td>${{$orders->total}}</td>
-                                                <td><a href="{{route('site.detail-order',['order_id'=>$orders->id])}}" class="btn btn-fill-out btn-sm">View</a></td>
+                                                <td><a href="{{route('site.detail-order',['order_id'=>$orders->id])}}" class="btn btn-fill-out btn-sm">Détail</a></td>
 
                                             </tr>
 

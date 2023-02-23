@@ -134,8 +134,6 @@ class ProductCreateComponent extends Component
         }
 
 
-
-
        session()->flash('message', 'Enregistrement effectué avec succès.');
        $this->resetInputFields();
 

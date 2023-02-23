@@ -10,6 +10,7 @@ class OrderComponent extends Component
 {
     public function updateOrderStatus($order_id, $status)
     {
+        // dd('ok');
         $order = Order::find($order_id);
         $order->status = $status;
         if($status == "delivered")
@@ -19,8 +20,11 @@ class OrderComponent extends Component
         {
             $order->canceled_date = DB::raw('CURRENT_DATE');
         }
+        $order->save();
 
         session()->flash('message', 'le statut est mise a jour avec succès.');
+        return redirect()->route('admin.order-index');
+
     }
     public function render()
     {

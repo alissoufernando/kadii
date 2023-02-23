@@ -40,8 +40,8 @@ class WelcomeComponent extends Component
     }
     public function render()
     {
-        $products = Product::inRandomOrder()->with('images')->limit(4)->get();
-        $products_latest = Product::latest()->with('images')->limit(4)->get();
+        $products = Product::inRandomOrder()->with('images')->limit(8)->get();
+        $products_latest = Product::latest()->with('images')->limit(8)->get();
         $category = Category::latest()->get();
         $carousel = Carousel::latest()->get();
         $sale = Sale::find(1);

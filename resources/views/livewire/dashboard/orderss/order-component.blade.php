@@ -70,8 +70,8 @@
                                                     Status
                                                     </button>
                                                     <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#" wire:click.prevent="updateOrderStatus({{$orders->id}}, 'delivered')">Delivered</a></li>
-                                                    <li><a class="dropdown-item" href="#" wire:click.prevent="updateOrderStatus({{$orders->id}}, 'canceled')">Canceled</a></li>
+                                                    <li class="cursor-pointer"><a class="cursor-pointer dropdown-item" wire:click.prevent="updateOrderStatus({{$orders->id}}, 'delivered')">Delivered</a></li>
+                                                    <li class="cursor-pointer"><a class="cursor-pointer dropdown-item" wire:click.prevent="updateOrderStatus({{$orders->id}}, 'canceled')">Canceled</a></li>
                                                     </ul>
                                             </div>
                                         </div>
