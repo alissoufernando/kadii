@@ -10,7 +10,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
         <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
-        <title>@yield('title') | CENTRALE-MOBILIER</title>
+        <title>@yield('title') | KADII</title>
         <!-- Google font-->
         @include('livewire.dashboard.partials.style')
         @livewireStyles()

@@ -4,7 +4,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title text-center">Edit Mon profile</h5>
+            <h5 class="modal-title text-center">Mein Profil Bearbeiten</h5>
           <button wire:click.prevent='resetInputFields' class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form class="form theme-form" wire:submit.prevent='saveProfile'>
@@ -15,7 +15,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label class="form-label" for="image">Image profile</label>:</label>
+                                            <label class="form-label" for="image">Profilbild</label>:</label>
                                             <input class="form-control" id="image" type="file"
                                                 accept=".jpg, .png, image/jpeg, image/png" wire:model.lazy='image'>
                                                 @if ($image)
@@ -27,8 +27,8 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                        <label class="form-label" for="slug">Telephone:</label>
-                                        <input class="form-control" required type="text" name="phone" placeholder="Phone *" wire:model.lazy="mobile">
+                                        <label class="form-label" for="slug">Telefon:</label>
+                                        <input class="form-control" required type="text" name="phone" placeholder="Telefon *" wire:model.lazy="mobile">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -49,21 +49,21 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                        <label class="form-label" for="slug">City:</label>
-                                        <input class="form-control" required type="text" name="city" placeholder="city " wire:model.lazy="city">
+                                        <label class="form-label" for="slug">Stadt:</label>
+                                        <input class="form-control" required type="text" name="stadt" placeholder="city " wire:model.lazy="city">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    <!--<div class="col-md-12">
                                         <div class="mb-3">
                                         <label class="form-label" for="slug">Department:</label>
                                         <input class="form-control" required type="text" name="departement" placeholder="departement " wire:model.lazy="departement">
                                         </div>
-                                    </div>
+                                    </div>-->
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label class="form-label" for="slug">Pays:</label>
+                                            <label class="form-label" for="slug">Land:</label>
                                             <select class="form-control" wire:model="country">
-                                                <option value="">Select an option...</option>
+                                                <option value="">Wähle eine option...</option>
                                                 <option value="AX">Aland Islands</option>
                                                 <option value="AF">Afghanistan</option>
                                                 <option value="AL">Albania</option>
@@ -313,8 +313,8 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                        <label class="form-label" for="slug">Cote postal:</label>
-                                        <input class="form-control form-control-lg" required type="text" name="zipcode" placeholder="zipcode " wire:model.lazy="zipcode">
+                                        <label class="form-label" for="slug">PLZ:</label>
+                                        <input class="form-control form-control-lg" required type="text" name="zipcode" placeholder="PLZ" wire:model.lazy="zipcode">
                                         </div>
                                     </div>
                                 </div>
@@ -324,10 +324,10 @@
                 </div>
                 <div class="modal-footer justify-content-start" >
                     <button type="submit" class="btn btn-primary btn-sm">
-                        Modifier
+                        Bearbeiten
                     </button>
 
-                  <a wire:click.prevent='resetInputFields' class="btn btn-danger float-end" type="button" data-bs-dismiss="modal">Fermer</a>
+                  <a wire:click.prevent='resetInputFields' class="btn btn-danger float-end" type="button" data-bs-dismiss="modal">Schließen</a>
                 </div>
         </form>
       </div>
