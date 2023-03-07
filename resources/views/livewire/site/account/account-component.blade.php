@@ -41,14 +41,14 @@
         <div class="row align-items-center">
         	<div class="col-md-6">
                 <div class="page-title">
-            		<h1>My Account</h1>
+            		<h1>Mein Konto</h1>
                 </div>
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active">My Account</li>
+                    <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                    <li class="breadcrumb-item"><a href="#">Seiten</a></li>
+                    <li class="breadcrumb-item active">Mein Konto</li>
                 </ol>
             </div>
         </div>
@@ -72,16 +72,16 @@
                 <div class="dashboard_menu">
                     <ul class="nav nav-tabs flex-column" role="tablist">
                         <li class="nav-item">
-                          <a class="nav-link active" id="address-tab" data-bs-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false"><i class="ti-location-pin"></i>Mon profile</a>
+                          <a class="nav-link active" id="address-tab" data-bs-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="false"><i class="ti-location-pin"></i>Mein profil</a>
                         </li>
 
                       <li class="nav-item">
-                        <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false"><i class="ti-shopping-cart-full"></i>Orders</a>
+                        <a class="nav-link" id="orders-tab" data-bs-toggle="tab" href="#orders" role="tab" aria-controls="orders" aria-selected="false"><i class="ti-shopping-cart-full"></i>Aufträge</a>
                       </li>
                       <li class="nav-item">
                     <form action="{{route('logout')}}" method="post">
                         @csrf
-                        <button class="nav-link" type="submit"><i class="ti-lock"></i>Logout</button>
+                        <button class="nav-link" type="submit"><i class="ti-lock"></i>Ausloggen</button>
                     </form>
                       </li>
                     </ul>
@@ -95,7 +95,7 @@
                             <div class="col-lg-12">
                                 <div class="card mb-3 mb-lg-0">
                                     <div class="card-header">
-                                        <h4>Mes informations</h4>
+                                        <h4>Meine Information</h4>
                                     </div>
                                     <div class="card-body">
                                         <div class="row">
@@ -107,17 +107,17 @@
                                                 @endempty
                                             </div>
                                             <div class="col-lg-6">
-                                                <p> <b>Nom</b>{{$user->name}}</p>
-                                                <p> <b>Email</b> {{$user->email}}</</p>
-                                                <p> <b>Téléphone</b> {{$user->profile->mobile}}</</p>
+                                                <p> <b>Name</b>{{$user->name}}</p>
+                                                <p> <b>Mail</b> {{$user->email}}</a></p>
+                                                <p> <b>Telefon</b> {{$user->profile->mobile}}</a></p>
                                                 <hr>
                                                 <p> <b>Line1</b>{{$user->profile->line2}}</p>
                                                 <p> <b>Line2</b> {{$user->profile->line2}}</p>
-                                                <p> <b>city</b> {{$user->profile->city}}</p>
-                                                <p> <b>departement</b> {{$user->profile->departement}}</p>
-                                                <p> <b>country</b> {{$user->profile->country}}</p>
-                                                <p> <b>zipcode</b> {{$user->profile->zipcode}}</p>
-                                                <a href="#"wire:click.prevent='getElementById({{$user->profile->id}})' class="btn btn-fill-out float-end" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Edit</a>
+                                                <p> <b>Stadt</b> {{$user->profile->city}}</p>
+                                                <!--<p> <b>departement</b>{{$user->profile->departement}}</p>-->
+                                                <p> <b>Land</b> {{$user->profile->country}}</p>
+                                                <p> <b>PLZ</b> {{$user->profile->zipcode}}</p>
+                                                <a href="#"wire:click.prevent='getElementById({{$user->profile->id}})' class="btn btn-fill-out float-end" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">Bearbeiten</a>
                                             </div>
                                         </div>
                                     </div>
@@ -128,14 +128,14 @@
                   	<div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
                     	<div class="card">
                         	<div class="card-header">
-                                <h3>Orders</h3>
+                                <h3>Aufträge</h3>
                             </div>
                             <div class="card-body">
                                 @empty($order)
                                 <div class="text-center" style="padding: 30px 0 ;">
-                                    <h1> Aucune commande n'a été effectuée</h1>
-                                    <p>Veillez effectuée une commande</p>
-                                    <a href="{{route('site.shop')}}" class="btn btn-success">Voir la boutique</a>
+                                    <h1> Keine Befehle</h1>
+                                    <p>Bitte geben Sie eine Bestellung auf</p>
+                                    <a href="{{route('site.shop')}}" class="btn btn-success">Geschäft</a>
                                 </div>
                                 @else
                     			<div class="table-responsive">
@@ -143,14 +143,14 @@
                                         <thead>
                                             <tr>
 
-                                                <th>ID</th>
-                                                <th>order date</th>
-                                                <th>Statut</th>
-                                                <th>subtotal</th>
-                                                <th>discount</th>
-                                                <th>Tax</th>
-                                                <th>Total</th>
-                                                <th>Actions</th>
+                                                <th>AUSWEIS</th>
+                                                <th>Auftragsdatum</th>
+                                                <th>Status</th>
+                                                <th>Zwischensumme</th>
+                                                <th>Rabatt</th>
+                                                <th>Steuer</th>
+                                                <th>gesamt</th>
+                                                <th>Aktionen</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -195,14 +195,14 @@
     	<div class="row align-items-center">
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
-                    <h3>Subscribe Our Newsletter</h3>
+                    <h3>Abonnieren Sie unseren Newsletter</h3>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="newsletter_form">
                     <form>
-                        <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
-                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
+                        <input type="text" required="" class="form-control rounded-0" placeholder="Geben Sie Ihre E-Mail-Adresse ein">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Abonnieren</button>
                     </form>
                 </div>
             </div>

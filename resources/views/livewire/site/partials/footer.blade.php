@@ -8,16 +8,15 @@
                         <div class="row align-items-center justify-content-between">
                             <div class="col-lg-5 col-md-6">
                                 <div class="heading_s1">
-                                    <h3>Subscribe Our Newsletter</h3>
+                                    <h3>Abonnieren Sie Unseren Newsletter</h3>
                                 </div>
-                                <p>Rejoignez la famille Centrale du mobilier ! Le meilleur moyen de garder contact et d'être au courant de nos ventes privées et bons plans.
-                                </p>
+                                <p>Werde Teil der KADII-Familie! Der beste Weg, um in Kontakt zu bleiben und über unsere privaten Verkäufe und guten Angebote informiert zu sein.</p>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="newsletter_form">
                                     <form>
                                         <input type="text" required="" class="form-control"
-                                            placeholder="Enter Email Address">
+                                            placeholder="Geben sie ihre E-Mail Adresse ein">
                                         <button type="submit" class="btn-send2" name="submit" value="Submit"><i
                                                 class="icon-envelope-letter"></i></button>
                                     </form>
@@ -34,9 +33,7 @@
 
                             <a href="#"><img src="{{asset('assets/site/assets/images/logo_sb_1.png')}}" alt="logo" width="60" height="60" /></a>
                         </div>
-                        <p>Importation – Vente et Réparation de tout mobilier de bureau et de maison, de Coffre-fort.
-                            Vente de tous les accessoires de fauteuils, de bureau, d’armoires, etc….
-                            </p>
+                        <p>Import – Verkauf und Lieferung aller Heiz- und Grillartikel. Verkauf von allem Zubehör, Holz, Kohlen, Grills, etc….</p>
                     </div>
                     <div class="widget">
                         <ul class="social_icons rounded_social">
@@ -52,37 +49,37 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="widget">
-                                <h6 class="widget_title">Quick Links</h6>
+                                <h6 class="widget_title">Schnelle Links</h6>
                                 <ul class="widget_links">
-                                    <li><a href="#">home</a></li>
-                                    <li><a href="#">login</a></li>
-                                    <li><a href="#">sign up</a></li>
-                                    <li><a href="#">shop</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">haus</a></li>
+                                    <li><a href="#">Anmeldung</a></li>
+                                    <li><a href="#">Registrierung</a></li>
+                                    <li><a href="#">Geschäft</a></li>
+                                    <li><a href="#">Kontakt</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="widget">
-                                <h6 class="widget_title">Information</h6>
+                                <h6 class="widget_title">Informations</h6>
                                 <ul class="widget_links">
-                                    <li><a href="#">Term Of Service</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Return policy</a></li>
-                                    <li><a href="#">Your Account</a></li>
-                                    <li><a href="#">Suppliers</a></li>
+                                    <li><a href="#">Nutzungsbedingungen</a></li>
+                                    <li><a href="#">Datenschutzerklärung</a></li>
+                                    <li><a href="#">Rücknahmegarantie</a></li>
+                                    <li><a href="#">Ihr Konto</a></li>
+                                    <li><a href="#">Lieferanten</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
                             <div class="widget">
-                                <h6 class="widget_title">My Account</h6>
+                                <h6 class="widget_title">Mein Konto</h6>
                                 <ul class="widget_links">
-                                    <li><a href="#">My Account</a></li>
-                                    <li><a href="#">Discount</a></li>
-                                    <li><a href="#">Returns</a></li>
-                                    <li><a href="#">Orders History</a></li>
-                                    <li><a href="#">Order Tracking</a></li>
+                                    <li><a href="#">Mein Konto</a></li>
+                                    <li><a href="#">Rabatt</a></li>
+                                    <li><a href="#">Kehrt zurück</a></li>
+                                    <li><a href="#">Auftragsverlauf</a></li>
+                                    <li><a href="#">Sendungsverfolgung</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -103,7 +100,7 @@
                                         <i class="ti-location-pin"></i>
                                     </div>
                                     <div class="icon_box_content">
-                                        <h5>Location</h5>
+                                        <h5>Standort</h5>
                                         <p>BP: 556 Abomey-Calavi Aganmadin,  </br> Rue avant SBBE Lot 147-d</p>
                                     </div>
                                 </div>
@@ -114,9 +111,9 @@
                                         <i class="ti-email"></i>
                                     </div>
                                     <div class="icon_box_content">
-                                        <h5>Email us</h5>
-                                        <p><a href="mailto:vente@centraledumobilier.com">vente@centraledumobilier.com</a> </br> <a
-                                                href="mailto:info@centraledumobilier.com">infos@centraledumobilier.com</a></p>
+                                        <h5>Schreiben Sie uns eine E-Mail</h5>
+                                        <p><a href="mailto:ronaldgires@gmail.com">ronaldgires@gmail.com</a></br> <a
+                                                href="mailto:ronaldgires@gmail.com">ronaldgires@gmail.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -126,8 +123,8 @@
                                         <i class="flaticon-support"></i>
                                     </div>
                                     <div class="icon_box_content">
-                                        <h5>Ouvert H24</h5>
-                                        <p>Appelez pour des conseils </br> <a href="https://wa.me/+22955221080?text=Bonjour,">+229 55221080</a> </p>
+                                        <h5>Jeden Tag geöffnet</h5>
+                                        <p>Lassen Sie sich beraten </br> <a href="https://wa.me/+33000000?text=Bonjour,">+33 000000</a> </p>
                                     </div>
                                 </div>
                             </div>

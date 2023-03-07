@@ -54,13 +54,13 @@
                                     <div class="col-lg-7 col-md-10">
                                         <div class="banner_content text_white text-center">
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
-                                                data-animation="fadeInDown" data-animation-delay="0.2s">Être satisfait a partir 90.00 FCFA</h4>
+                                                data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Bienvenue !!</h1>
+                                                data-animation-delay="0.3s">Willkommen !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
-                                                data-animation-delay="0.4s">A la Centrale du mobilier</h3>
+                                                data-animation-delay="0.4s"> bei KADII </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.5s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -74,17 +74,13 @@
                                     <div class="col-lg-7 col-md-10">
                                         <div class="banner_content text_white text-center">
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
-                                                data-animation="fadeInDown" data-animation-delay="0.2s">Être satisfait a partir 90.00 FCFA</h4>
+                                                data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Centrale du mobilier!!</h1>
+                                                data-animation-delay="0.3s">KADII !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
-                                                data-animation-delay="0.4s"> est reconnu comme une entreprise de longévité prestigieuse
-
-                                                par l'Administration des petites et moyennes entreprises  et
-
-                                                continue sa valeur en tant qu'entreprise de deuxième génération.</h3>
+                                                data-animation-delay="0.4s"> steht Ihnen zur Verfügung, um Ihren Bedarf an Heizwerkzeugen zu decken</h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.5s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -98,13 +94,13 @@
                                     <div class="col-lg-7 col-md-10">
                                         <div class="banner_content text_white text-center">
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
-                                                data-animation="fadeInDown" data-animation-delay="0.2s">Être satisfait a partir 90.00 FCFA</h4>
+                                                data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Nos tables !!</h1>
+                                                data-animation-delay="0.3s">Unsere Holzkohlepellets !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
-                                                data-animation-delay="0.4s">Trouves des tables de conférence MEX sur mesure pour vous</h3>
+                                                data-animation-delay="0.4s">Finden Sie bei uns die besten Kohlepellets</h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.5s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -118,16 +114,16 @@
                                     <div class="col-lg-7 col-md-10">
                                         <div class="banner_content text_white text-center">
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
-                                                data-animation="fadeInDown" data-animation-delay="0.2s">Être satisfait a partir 90.00 FCFA</h4>
+                                                data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Bienvenue !!</h1>
+                                                data-animation-delay="0.3s">Willkommen !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
                                                 data-animation-delay="0.4s">Nous sommes sûrs que vous constaterez que nos coffres-forts sont fidèles à la sécurité des clients.
 
                                                 Avec une fiabilité éprouvée dans plus de 50 ans d'expérience, nous sommes convaincus d'être votre meilleur partenaire commercial.
                                             </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.5s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -141,14 +137,14 @@
                                     <div class="col-lg-7 col-md-10">
                                         <div class="banner_content text_white text-center">
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
-                                                data-animation="fadeInDown" data-animation-delay="0.2s">Être satisfait a partir 90.00 FCFA</h4>
+                                                data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
                                                 data-animation-delay="0.3s">Nous sommes </h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
                                                 data-animation-delay="0.4s"> les représentants exclusif au Bénin et dans la sous région de la gamme MEX
                                             </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.5s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -162,15 +158,15 @@
                                     <div class="col-lg-7 col-md-10">
                                         <div class="banner_content text_white text-center">
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
-                                                data-animation="fadeInDown" data-animation-delay="0.2s">Être satisfait a partir 90.00 FCFA</h4>
+                                                data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Nous avons !!</h1>
+                                                data-animation-delay="0.3s">Wir haben !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
                                                 data-animation-delay="0.4s">
                                                 des comptoirs Mex sur mesure pour votre Hall d'accueil.
                                             </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.5s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +198,7 @@
                                         <h3 class="staggered-animation" data-animation="fadeInUp"
                                             data-animation-delay="0.4s">{{ $carousels->text[0]}}</h3>
                                         <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                            data-animation="fadeInUp" data-animation-delay="0.4s">Voir Boutique</a>
+                                            data-animation="fadeInUp" data-animation-delay="0.4s">Geschäft</a>
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +219,7 @@
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
                                                 data-animation-delay="0.4s">{{ $carousels->text}}</h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
-                                                data-animation="fadeInUp" data-animation-delay="0.4s">Voir Boutique</a>
+                                                data-animation="fadeInUp" data-animation-delay="0.4s">Geschäft</a>
                                         </div>
                                     </div>
                                 </div>
@@ -253,10 +249,9 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-3 col-md-4">
                                     <div class="text-center text-md-start">
-                                        <h4>Nos catégories</h4>
-                                        <p class="mb-2">Parcourez le catalogue de nos meubles pour professionnels et profitez
-                                            d’un large choix de mobilier adapté à tous les secteurs d’activité.</p>
-                                        <a href="{{ route('site.shop')}}" class="btn btn-line-fill btn-sm">View All</a>
+                                        <h4>Unsere Kategorien</h4>
+                                        <p class="mb-2">Durchsuchen Sie den Katalog unserer Artikel und finden Sie die, die Sie brauchen.</p>
+                                        <a href="{{ route('site.shop')}}" class="btn btn-line-fill btn-sm">Alles sehen</a>
                                     </div>
                                 </div>
                                 <div class="col-lg-9 col-md-8">
@@ -292,9 +287,9 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="heading_s4 text-center">
-                            <h2>Nos products populaires</h2>
+                            <h2>Unsere beliebten Produkte</h2>
                         </div>
-                        <p class="text-center leads">Nos meubles sont adaptés à tous les secteurs d’activité et à toutes les configurations de locaux. Que vous aménagiez un bureau individuel ou des bureaux partagés, nous avons la solution.</p>
+                        <p class="text-center leads"> </p>
                     </div>
                 </div>
                 <div class="row shop_container">
@@ -337,8 +332,8 @@
                            <div class="product_info">
                                <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $product->id])}}">{{$product->name}}</a></h6>
                                <div class="product_price">
-                                   <span class="price">{{$product->sale_price}} FCFA</span>
-                                   <del>{{$product->normal_price}} FCFA</del>
+                                   <span class="price">{{$product->sale_price}} €</span>
+                                   <del>{{$product->normal_price}} €</del>
                                </div>
                                <div class="rating_wrap">
                                    <div class="rating">
@@ -351,14 +346,14 @@
                                </div>
                                <div class="add-to-cart">
                                    <a href="#" wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})" class="btn btn-fill-out btn-radius btn-sm"><i class="icon-basket-loaded"></i>
-                                       Add To Cart</a>
+                                       Hinzufügen</a>
                                </div>
                            </div>
                        </div>
                    </div>
                    @endforeach
                    @else
-                   <p>Aucun produit n'est dans la base de données</p>
+                   <p>Kein Produkt in der Datenbank</p>
 
                    @endif
 
@@ -379,17 +374,17 @@
                             <h3 class="single_bn_title">Big Sale Deal</h3>
                             <h4 class="single_bn_title1 text_default">Sale 40% Off</h4>
                             <div class="countdown_time countdown_style3 mb-4" data-time="{{Carbon\Carbon::parse($sale->sale_date)->format('Y/m/d h:m:s')  }}"></div>
-                            <a href="{{ route('site.shop') }}" class="btn btn-fill-out">Boutique</a>
+                            <a href="{{ route('site.shop') }}" class="btn btn-fill-out">Geschäft</a>
                             <div class="newsletter_form2 mt-5">
                                 <form method="post">
                                     <div class="form-group mb-3">
                                         <input name="email" required="" type="email" class="form-control"
-                                            placeholder="Enter Your Email">
+                                            placeholder="Geben sie ihre E-Mail Adresse ein">
                                         <button class="btn btn-fill-out text-uppercase" title="Subscribe"
-                                            type="submit">Subscribe</button>
+                                            type="submit">Abonnieren</button>
                                     </div>
                                     <div class="form-group">
-                                        <small> To receive latest offers and discounts from the shop. </small>
+                                        <small> Um die neuesten Angebote und Rabatte aus dem Shop zu erhalten. </small>
                                     </div>
                                 </form>
                             </div>
@@ -409,9 +404,9 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="heading_s4 text-center">
-                            <h2>Nos derniers products</h2>
+                            <h2>Unsere neusten Produkte</h2>
                         </div>
-                        <p class="text-center leads">Nos meubles sont adaptés à tous les secteurs d’activité et à toutes les configurations de locaux. Que vous aménagiez un bureau individuel ou des bureaux partagés, nous avons la solution.</p>
+                        <<p class="text-center leads"> </p>
                     </div>
                 </div>
                 <div class="row shop_container">
@@ -455,7 +450,7 @@
                                <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $products_latests->id])}}">{{$products_latests->name}}</a></h6>
                                <div class="product_price">
                                    <span class="price">{{number_format($products_latests->sale_price,2,"."," ")}} FCFA</span>
-                                   <del>{{$products_latests->normal_price}} FCFA</del>
+                                   <del>{{$products_latests->normal_price}} €</del>
                                </div>
                                <div class="rating_wrap">
                                    <div class="rating">
@@ -468,14 +463,14 @@
                                </div>
                                <div class="add-to-cart">
                                    <a href="#" wire:click.prevent ="store({{$products_latests->id}},'{{$products_latests->name}}',{{$products_latests->sale_price}})" class="btn btn-fill-out btn-radius btn-sm"><i class="icon-basket-loaded"></i>
-                                       Add To Cart</a>
+                                       Hinzufügen</a>
                                </div>
                            </div>
                        </div>
                    </div>
                    @endforeach
                    @else
-                   <p>Aucun produit n'est dans la base de données</p>
+                   <p>Keine Daten in der Datenbank</p>
 
                    @endif
 
