@@ -10,21 +10,13 @@
             <a href="{{route('welcome')}}" class="sidebar-header {{ Route::currentRouteName()== 'welcome' ? 'active' : '' }}"><i data-feather="home"></i><span>Home</span></i>
             </a>
         </li>
-      <li class="{{request()->route()->getPrefix() == '/admin' ? 'active' : '' }}">
-        <a class="sidebar-header" ><i data-feather="home"></i><span>{{ trans('lang.Dashboard') }}</span>
-          <span class="badge rounded-pill badge-primary">6</span><i class="fa fa-angle-right pull-right"></i>
-        </a>
-        <ul class="sidebar-submenu">
-          <li><a href="{{route('admin.product-index')}}" class="{{ Route::currentRouteName()== 'admin.product-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Produits</a></li>
-          <li><a href="{{route('admin.category-index')}}" class="{{ Route::currentRouteName()== 'admin.category-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Catégories</a></li>
-          <li><a href="{{route('admin.carousel-index')}}" class="{{ Route::currentRouteName()== 'admin.carousel-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Carousels</a></li>
-          <li><a href="{{route('admin.order-index')}}" class="{{ Route::currentRouteName()== 'admin.order-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Commandes</a></li>
-          <li><a href="{{route('admin.coupon-index')}}" class="{{ Route::currentRouteName()== 'admin.coupon-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Coupons</a></li>
-          <li><a href="{{route('admin.sale-index')}}" class="{{ Route::currentRouteName()== 'admin.sale-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Sales</a></li>
-          <li><a href="{{route('admin.attributes-index')}}" class="{{ Route::currentRouteName()== 'admin.attributes-index' ? 'active' : '' }}"><i class="fa fa-circle"></i>Attributes</a></li>
-        </ul>
-      </li>
-
+        <li><a href="{{route('admin.product-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.product-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Produits</span></i></a></li>
+        <li><a href="{{route('admin.category-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.category-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Catégories</span></i></a></li>
+        <li><a href="{{route('admin.carousel-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.carousel-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Carousels</span></i></a></li>
+        <li><a href="{{route('admin.order-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.order-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Commandes</span></i></a></li>
+        <li><a href="{{route('admin.coupon-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.coupon-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Coupons</span></i></a></li>
+        <li><a href="{{route('admin.sale-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.sale-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Sales</span></i></a></li>
+        {{-- <li><a href="{{route('admin.attributes-index')}}" class="sidebar-header {{ Route::currentRouteName()== 'admin.attributes-index' ? 'active' : '' }}"><i data-feather="home"></i><span>Attributes</span></i></a></li> --}}
 
         <li class="{{request()->route()->getPrefix() == '/administration' ? 'active' : '' }}">
           <a class="sidebar-header" ><i data-feather="user"></i><span>Administration</span><i class="fa fa-angle-right pull-right"></i>
