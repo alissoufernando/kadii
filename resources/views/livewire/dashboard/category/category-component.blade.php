@@ -33,7 +33,7 @@
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Slug</th>
-                                <th>Sous categories</th>
+                                {{-- <th>catégories</th> --}}
                                 <th>Menu</th>
                                 <th>Actions</th>
                                 </tr>
@@ -47,7 +47,7 @@
                                     <td>{{$i ++}}</td>
                                     <td>{{$categories->name}}</td>
                                     <td>{{$categories->slug}}</td>
-                                    <td>
+                                    {{-- <td>
                                         <ul style="list-style:none; ">
                                             @foreach($categories->subcategories as $scategories)
                                             <li>
@@ -68,7 +68,7 @@
                                             </li>
                                             @endforeach
                                         </ul>
-                                    </td>
+                                    </td> --}}
                                     <td  class="text-center">
                                         @if ($categories->menu == 0)
 

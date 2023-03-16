@@ -13,14 +13,14 @@
         content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/site/assets/images/logo_1.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/site/assets/images/logo_sb_1.png')}}">
     <!-- Animation CSS -->
     <link rel="stylesheet" href="{{ asset('assets/site/assets/css/animate.css') }}">
     <!-- Latest Bootstrap min CSS -->
     <link rel="stylesheet" href="{{ asset('assets/site/assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.css" integrity="sha512-qveKnGrvOChbSzAdtSs8p69eoLegyh+1hwOMbmpCViIwj7rn4oJjdmMvWOuyQlTOZgTlZA0N2PXA7iA8/2TUYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js" integrity="sha512-1mDhG//LAjM3pLXCJyaA+4c+h5qmMoTc7IuJyuNNPaakrWT9rVTxICK4tIizf7YwJsXgDC2JP74PGCc7qxLAHw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <title>CENTRALE-MOBILIER</title>
+    <title>KADII</title>
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     @include('livewire.site.partials.style')
 
@@ -50,17 +50,13 @@
 
         <!-- END MAIN CONTENT -->
 
-
             {{ $slot }}
-
 
         <!-- END MAIN CONTENT -->
 
         <!-- START FOOTER -->
         @include('livewire.site.partials.footer')
         <!-- END FOOTER -->
-
-
 
         @livewireScripts()
         @include('livewire.site.partials.script')

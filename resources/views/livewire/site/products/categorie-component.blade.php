@@ -73,10 +73,10 @@
                             <div class="product_header_left">
                                 <div class="custom_select">
                                     <select class="form-control form-control-sm" wire:model="sorting">
-                                        <option value="default">Default sorting</option>
-                                        <option value="date">Sort by date</option>
-                                        <option value="price">Sort by price: low to high</option>
-                                        <option value="price-desc">Sort by price: high to low</option>
+                                        <option value="default">Standard-Sortierung</option>
+                                        <option value="date">Nach Datum sortieren</option>
+                                        <option value="price">Nach Preis sortieren: niedrig bis hoch</option>
+                                        <option value="price-desc">Nach Preis sortieren: hoch bis niedrig</option>
                                     </select>
                                 </div>
                             </div>
@@ -137,8 +137,8 @@
                           <div class="product_info">
                               <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $product->id])}}">{{$product->name}}</a></h6>
                               <div class="product_price">
-                                  <span class="price">{{$product->sale_price}} FCFA</span>
-                                  <del>{{$product->normal_price }} FCFA</del>
+                                  <span class="price">{{$product->sale_price}} €</span>
+                                  <del>{{$product->normal_price }} €</del>
                                   <div class="on_sale">
                                       <span>35% Off</span>
                                   </div>
@@ -171,7 +171,7 @@
                       </div>
                   </div>
                   @empty
-                  <p>Aucun produit n'est dans la base de données</p>
+                  <p>Kein Produkt in der Datenbank</p>
                  @endforelse
                  {{$products->links()}}
                 </div>
@@ -179,7 +179,7 @@
             <div class="col-lg-3 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
             	<div class="sidebar">
                 	<div class="widget">
-                        <h5 class="widget_title">Categories</h5>
+                        <h5 class="widget_title">Kategorien</h5>
                         <ul x-data="{ open: false }" class="widget_categories" >
                             @foreach($category as $categorys)
 

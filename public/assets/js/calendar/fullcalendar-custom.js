@@ -28,7 +28,7 @@ var basic_calendar = {
                 title: 'All Day Event',
                 start: '2016-06-01'
             },
-            {       
+            {
                 title: 'Long Event',
                 start: '2016-06-07',
                 end: '2016-06-10'
@@ -132,7 +132,7 @@ var basic_calendar = {
             {
                 title: 'Lunch',
                 start: '2016-06-12T12:00:00'
-            },  
+            },
             {
                 title: 'Meeting',
                 start: '2016-06-12T14:30:00'
@@ -178,7 +178,7 @@ var basic_calendar = {
                         end: end._d,
                         allDay: allDay
                     },
-                    true 
+                    true
                     );
                 }
                 $('#cal-agenda-view').fullCalendar('unselect');
@@ -197,7 +197,7 @@ var basic_calendar = {
                 id: 999,
                 title: 'Repeating Event',
                 start: '2016-06-09T16:00:00'
-            },  
+            },
             {
                 id: 999,
                 title: 'Repeating Event',
@@ -246,12 +246,12 @@ var basic_calendar = {
             right: 'month,agendaWeek,agendaDay'
             },
             defaultDate: '2018-02-03',
-            businessHours: true, 
+            businessHours: true,
             editable: true,
             selectable: true,
             selectHelper: true,
             droppable: true,
-            eventLimit: true, 
+            eventLimit: true,
             select: function(start, end, allDay) {
                 var title = prompt('Event Title:');
                 if (title) {
@@ -276,7 +276,7 @@ var basic_calendar = {
             {
                 title: 'Meeting',
                 start: '2018-02-13T11:00:00',
-                constraint: 'availableForMeeting', 
+                constraint: 'availableForMeeting',
                 color: '#1ea6ec'
             },
             {
@@ -313,7 +313,7 @@ var basic_calendar = {
                 overlap: false,
                 rendering: 'background',
                 color: '#1ea6ec'
-            }   
+            }
             ]
         }), $('#cal-event-colors').fullCalendar({
             header: {
@@ -347,7 +347,7 @@ var basic_calendar = {
             {
                 title: 'All Day Event',
                 start: '2016-06-01',
-                color: '#4466f2'
+                color: '#E90001'
             },
             {
                 title: 'Long Event',
@@ -414,14 +414,14 @@ var basic_calendar = {
         }), $('#external-events .fc-event').each(function() {
                 $(this).css({'backgroundColor': $(this).data('color'), 'borderColor': $(this).data('color')});
                 $(this).data('event', {
-                    title: $.trim($(this).text()), 
+                    title: $.trim($(this).text()),
                     color: $(this).data('color'),
-                    stick: true 
+                    stick: true
                 });
                 $(this).draggable({
                     zIndex: 999,
-                    revert: true,      
-                    revertDuration: 0  
+                    revert: true,
+                    revertDuration: 0
                 });
         }), $('#fc-external-drag').fullCalendar({
             header: {
@@ -445,7 +445,7 @@ var basic_calendar = {
                         end: end._d,
                         allDay: allDay
                     },
-                    true 
+                    true
                     );
                 }
                 $('#fc-external-drag').fullCalendar('unselect');
@@ -454,7 +454,7 @@ var basic_calendar = {
             {
                 title: 'All Day Event',
                 start: '2018-06-01',
-                color: '#4466f2'
+                color: '#E90001'
             },
             {
                 title: 'Long Event',
@@ -522,7 +522,7 @@ var basic_calendar = {
                 if ($('#drop-remove').is(':checked')) {
                     $(this).remove();
                 }
-            }   
+            }
         }), $('#external-events .fc-event').each(function() {
                 $(this).css({'backgroundColor': $(this).data('color'), 'borderColor': $(this).data('color')});
                 $(this).data('event', {
@@ -532,8 +532,8 @@ var basic_calendar = {
                 });
                 $(this).draggable({
                     zIndex: 999,
-                    revert: true, 
-                    revertDuration: 0 
+                    revert: true,
+                    revertDuration: 0
                 });
         }), $('#fc-external-drag').fullCalendar({
             header: {
@@ -566,7 +566,7 @@ var basic_calendar = {
             {
                 title: 'All Day Event',
                 start: '2018-06-01',
-                color: '#4466f2'
+                color: '#E90001'
             },
             {
                 title: 'Long Event',

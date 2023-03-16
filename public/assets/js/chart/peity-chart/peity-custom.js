@@ -22,14 +22,14 @@ $(".data-attributes span").peity("donut")
 $("span.pie").peity("pie")
 
 $(".bar-colours-1").peity("bar", {
-  fill: ["#4466f2", "#1ea6ec", "#22af47"],
+  fill: ["#E90001", "#1ea6ec", "#22af47"],
   width: '100',
   height: '82'
 })
 
 $(".bar-colours-2").peity("bar", {
   fill: function(value) {
-    return value > 0 ? "#4466f2" : "#1ea6ec"
+    return value > 0 ? "#E90001" : "#1ea6ec"
   },
   width: '100',
   height: '82'
@@ -45,7 +45,7 @@ $(".bar-colours-3").peity("bar", {
 })
 
 $(".pie-colours-1").peity("pie", {
-  fill: ["#4466f2", "#1ea6ec", "#ff5370", "#ff9f40"],
+  fill: ["#E90001", "#1ea6ec", "#ff5370", "#ff9f40"],
   width: '100',
   height: '82'
 })

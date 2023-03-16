@@ -13,13 +13,11 @@ class CategoryComponent extends Component
 
     public $name;
     public $slug;
-    public $parent_id;
-    public $parents_id;
     public $categorie_id;
     public $menu;
     public $id_cat_menu;
     public $deleteIdBeingRemoved = null;
-    protected $listeners = ['deleteConfirmation' => 'deleteCategorys','deleteConfirmation' => 'deleteSubcategorys','deleteConfirmation' => 'deleteSubsubcategorys'];
+    protected $listeners = ['deleteConfirmation' => 'deleteCategorys'];
 
     public function generateSlug() {
 
@@ -32,7 +30,7 @@ class CategoryComponent extends Component
         // Clean errors if were visible before
         $this->resetErrorBag();
         $this->resetValidation();
-        $this->reset(['name', 'slug', 'parent_id','parents_id','categorie_id']);
+        $this->reset(['name', 'slug','categorie_id']);
     }
 
 
@@ -84,44 +82,15 @@ class CategoryComponent extends Component
 
             ]);
         }
-        if($this->parent_id && $this->parents_id)
-        {
-            $mySSCategorie = new  Subsubcategory();
-            if ($this->categorie_id) {
-                $mySSCategorie = Subsubcategory::findOrFail($this->categorie_id);
-            }
-
-            $mySSCategorie->name = $this->name;
-            $mySSCategorie->slug = $this->slug;
-            $mySSCategorie->category_id = $this->parent_id;
-            $mySSCategorie->subcategory_id = $this->parents_id;
-            $mySSCategorie->save();
 
 
-
-
-        }elseif ($this->parent_id)
-        {
-            $mySCategorie = new  Subcategory();
-            if ($this->categorie_id) {
-                $mySCategorie = Subcategory::findOrFail($this->categorie_id);
-            }
-
-            $mySCategorie->name = $this->name;
-            $mySCategorie->slug = $this->slug;
-            $mySCategorie->category_id = $this->parent_id;
-            $mySCategorie->save();
-
-        }else
-        {
-            $myCategorie = new Category();
+        $myCategorie = new Category();
         if ($this->categorie_id) {
             $myCategorie = Category::findOrFail($this->categorie_id);
         }
         $myCategorie->name = $this->name;
         $myCategorie->slug = $this->slug;
         $myCategorie->save();
-        }
 
         if ($this->categorie_id) {
             session()->flash('message', 'Modification effectuée avec succès.');
@@ -132,38 +101,13 @@ class CategoryComponent extends Component
         $this->emit('saveCategory');
     }
 
-    public function getElementById($id,$id_s = null,$id_ss = null)
+    public function getElementById($id)
     {
-
-        if($id_ss && $id_s && $id)
-        {
-
-            $this->id_ss = $id_ss;
-            $mySSCategorie = Subsubcategory::findOrFail($this->id_ss);
-            $this->parents_id = $mySSCategorie->subcategory_id;
-            $this->parent_id = $mySSCategorie->category_id;
-            $this->categorie_id = $mySSCategorie->id;
-            $this->name = $mySSCategorie->name;
-            $this->slug = $mySSCategorie->slug;
-
-
-        }elseif($id_s && $id)
-        {
-            $this->id_s = $id_s;
-            $mySCategorie = Subcategory::findOrFail($this->id_s);
-            $this->parent_id = $mySCategorie->category_id;
-            $this->categorie_id = $mySCategorie->id;
-            $this->name = $mySCategorie->name;
-            $this->slug = $mySCategorie->slug;
-        }else
-        {
-
-            $this->categorie_id = $id;
-            $myCategorie = Category::findOrFail($this->categorie_id);
-            $this->categorie_id = $myCategorie->category_id;
-            $this->name = $myCategorie->name;
-            $this->slug = $myCategorie->slug;
-        }
+        $this->categorie_id = $id;
+        $myCategorie = Category::findOrFail($this->categorie_id);
+        $this->categorie_id = $myCategorie->category_id;
+        $this->name = $myCategorie->name;
+        $this->slug = $myCategorie->slug;
 
     }
 
@@ -181,41 +125,14 @@ class CategoryComponent extends Component
         $this->dispatchBrowserEvent('deleted',['message' => 'Cette catégorie à été supprimer']);
 
     }
-    public function deleteSubcategory($id)
-    {
-        $this->deleteIdBeingRemoved = $id;
-        $this->dispatchBrowserEvent('show-delete-confirmation');
-    }
 
-    public function deleteSubcategorys()
-    {
-        $myProduct = Subcategory::findOrFail($this->deleteIdBeingRemoved);
-        $myProduct->delete();
-        $this->dispatchBrowserEvent('deleted',['message' => 'Cette sous catégorie à été supprimer']);
-
-    }
-    public function deleteSubsubcategory($id)
-    {
-        $this->deleteIdBeingRemoved = $id;
-        $this->dispatchBrowserEvent('show-delete-confirmation');
-    }
-
-    public function deleteSubsubcategorys()
-    {
-        $myProduct = Subsubcategory::findOrFail($this->deleteIdBeingRemoved);
-        $myProduct->delete();
-        $this->dispatchBrowserEvent('deleted',['message' => 'Cette sous sous-catégorie à été supprimer']);
-
-    }
     public function render()
     {
         $categorie = Category::latest()->get();
-        $subcategorie = Subcategory::where('category_id', $this->parent_id)->get();
         // dd('ok');
 
         return view('livewire.dashboard.category.category-component',[
             'categorie' => $categorie,
-            'subcategorie' => $subcategorie,
         ]);
     }
 }

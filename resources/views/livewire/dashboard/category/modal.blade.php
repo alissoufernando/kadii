@@ -27,30 +27,6 @@
                             <input class="form-control form-control-lg" id="slug" type="text" placeholder="Slug de la categories" wire:model.lazy='slug'>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="md-3">
-                                <label class="form-label" for="parent_id">Sous Catégories:</label>
-                                <select class="form-select" wire:model.lazy="parent_id">
-                                    <option value="">None</option>
-                                    @foreach ($categorie as $categories)
-                                    <option value="{{$categories->id}}">{{$categories->name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="md-3">
-                                <label class="form-label" for="parent_id">Sous Sous-Catégories:</label>
-                                <select class="form-select" wire:model.lazy="parents_id">
-                                    <option value="">None</option>
-                                    @foreach ($subcategorie as $subcategories)
-                                    <option value="{{$subcategories->id}}">{{$subcategories->name}}</option>
-                                    @endforeach
-                                </select>
-                            </div>
-                        </div>
-
                         </div>
                     </div>
                 </div>

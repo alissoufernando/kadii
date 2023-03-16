@@ -76,7 +76,7 @@ var morris_chart = {
                 xkey: "x",
                 ykeys: ["y", "z"],
                 labels: ["Y", "Z"],
-                barColors: [endlessAdminConfig.primary ,endlessAdminConfig.secondary , "#4466f2" ,"#1ea6ec"],
+                barColors: [endlessAdminConfig.primary ,endlessAdminConfig.secondary , "#E90001" ,"#1ea6ec"],
                 stacked: !0
             });
         });
@@ -388,7 +388,7 @@ $(function() {
                 show: true
             }
         },
-        colors: ["#4466f2", "#1ea6ec" ,"#22af47" ,"#007bff" ,"#FF5370", "#22af47" ,"#ff9f40"]
+        colors: ["#E90001", "#1ea6ec" ,"#22af47" ,"#007bff" ,"#FF5370", "#22af47" ,"#ff9f40"]
     });
 });
 

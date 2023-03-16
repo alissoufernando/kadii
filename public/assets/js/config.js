@@ -1,4 +1,4 @@
-var primary = localStorage.getItem("primary") || '#4466f2';
+var primary = localStorage.getItem("primary") || '#E90001';
 var secondary = localStorage.getItem("secondary") || '#1ea6ec';
 
 window.endlessAdminConfig = {

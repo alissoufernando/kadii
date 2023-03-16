@@ -157,7 +157,7 @@
                                                         {{ $item->price * $item->quantity }} FCFA</td>
 
                                                     <td class="product-subtotal" data-title="Total">
-                                                        @if ($order->status == "delivered" && $item->rstatus == 0)
+                                                        @if ($order->status == "delivered" && $item->rstatus == false)
                                                         <a href="{{route('site.detail-produit', ['id' => $item->id])}}"> Wirte Review</a>
                                                         @endif
                                                     </td>

@@ -1,0 +1,18 @@
+{
+    "validation": {
+        "required": "Dieses Feld ist erforderlich.",
+        "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "min": {
+            "numeric": "Dieses Feld muss mindestens :min sein.",
+            "string": "Dieses Feld muss mindestens :min Zeichen enthalten."
+        },
+        "max": {
+            "numeric": "Dieses Feld darf höchstens :max sein.",
+            "string": "Dieses Feld darf höchstens :max Zeichen enthalten."
+        }
+    },
+    "messages": {
+        "success": "Ihre Anfrage wurde erfolgreich gesendet.",
+        "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    }
+}

@@ -28,7 +28,7 @@ var morris_chart = {
             xkey: 'x',
             ykeys: ['y', 'z'],
             labels: ['Y', 'Z'],
-            lineColors: ["#1ea6ec", "#4466f2"],
+            lineColors: ["#1ea6ec", "#E90001"],
         }), Morris.Line({
             element: "morris-line-chart",
             data: [{
@@ -68,7 +68,7 @@ var morris_chart = {
                 }],
             xkey: "y",
             ykeys: ["a", "b"],
-            lineColors: ["#1ea6ec", "#4466f2"],
+            lineColors: ["#1ea6ec", "#E90001"],
             labels: ["Series A", "Series B"]
         }), Morris.Bar({
             element: "morris-simple-bar-chart",
@@ -98,7 +98,7 @@ var morris_chart = {
                 }],
             xkey: "x",
             ykeys: ["y", "z", "a"],
-            barColors: ["#1ea6ec", "#4466f2" ,"#ff5370"],
+            barColors: ["#1ea6ec", "#E90001" ,"#ff5370"],
             labels: ["Y", "Z", "A"]
         }), Morris.Bar({
             element: "bar-line-chart-morris",
@@ -141,7 +141,7 @@ var morris_chart = {
             xkey: "x",
             ykeys: ["y"],
             labels: ["Y"],
-            barColors: ["#4466f2"]
+            barColors: ["#E90001"]
         }), $(function() {
             var b = [{
                 period: "2012-10-01",
@@ -177,7 +177,7 @@ var morris_chart = {
             Morris.Bar({
                 element: 'x-lable-morris-chart',
                 data: b,
-                barColors: ["#4466f2", "#1ea6ec"],
+                barColors: ["#E90001", "#1ea6ec"],
                 xkey: "period",
                 ykeys: ["licensed", "sorned"],
                 labels: ["Licensed", "SORN"],
@@ -195,7 +195,7 @@ var morris_chart = {
                 ykeys: ["y"],
                 labels: ["sin(x)"],
                 parseTime: !1,
-                lineColors: ["#4466f2"],
+                lineColors: ["#E90001"],
                 hoverCallback: function(a, b, c, d) {
                     return c.replace("sin(x)", "1.5 + 1.5 sin(" + d.x + ")")
                 },
@@ -257,7 +257,7 @@ var morris_chart = {
                 element: 'x-Labels-Diagonally-morris-chart',
                 data: b,
                 xkey: "period",
-                lineColors: ["#4466f2", "#1ea6ec"],
+                lineColors: ["#E90001", "#1ea6ec"],
                 ykeys: ["licensed", "sorned"],
                 labels: ["Licensed", "SORN"],
                 xLabelAngle: 60
@@ -312,7 +312,7 @@ var morris_chart = {
                         ymin: -1,
                         ymax: 1,
                         hideHover: !0,
-                        lineColors: ["#4466f2", "#1ea6ec"],
+                        lineColors: ["#E90001", "#1ea6ec"],
                     }),
                     h = function() {
                         e++, g.setData(f(5 * e)), $(".reloadStatus").text(e + " reloads")
@@ -373,7 +373,7 @@ var morris_chart = {
                 xkey: "x",
                 ykeys: ["y", "z", "a"],
                 labels: ["A", "Y", "Z"],
-                barColors: ["#ff9f40", "#1ea6ec" ,"#4466f2" ,"#ff5a75" ,"#ff9f40", "#1ea6ec" ,"#4466f2"],
+                barColors: ["#ff9f40", "#1ea6ec" ,"#E90001" ,"#ff5a75" ,"#ff9f40", "#1ea6ec" ,"#E90001"],
                 stacked: !0
             });
         });

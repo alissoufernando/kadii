@@ -18,27 +18,7 @@ class ShopComponent extends Component
 
     public $min_price;
     public $max_price;
-    public $open = false;
-    public $open1 = false;
-
-    public function moins()
-    {
-        $this->open = false;
-    }
-    public function plus()
-    {
-        $this->open = true;
-
-    }
-    public function moins1()
-    {
-        $this->open1 = false;
-    }
-    public function plus1()
-    {
-        $this->open1 = true;
-
-    }
+  
 
     public function mount()
     {

@@ -124,21 +124,28 @@ class DetailComponent extends Component
 
     public function addReview()
     {
-
         $this->validate([
             'rating' => 'required',
             'comment' => 'required',
         ]);
-        $review = new Review();
-        $review->rating = $this->rating;
-        $review->comment = $this->comment;
-        $review->order_items_id = $this->order_item_id;
-        $review->save();
-
+        
         $orderItem = OrderItem::find($this->order_item_id);
-        $orderItem->rstatus = 1;
-        $review->save();
-        session()->flash('message_r', 'votre note a été ajouter avec succès');
+        if($orderItem)
+        {
+            $review = new Review();
+            $review->rating = $this->rating;
+            $review->comment = $this->comment;
+            $review->order_items_id = $this->order_item_id;
+            $review->save();
+
+            $orderItem = OrderItem::find($this->order_item_id);
+            $orderItem->rstatus = 1;
+            $orderItem->save();
+            session()->flash('message_r', 'votre note a été ajouter avec succès');
+        }
+
+
+
         $this->resetInputFields();
         $this->emit('addReview');
     }

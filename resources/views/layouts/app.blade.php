@@ -8,9 +8,9 @@
         <meta name="keywords" content="admin template, endless admin template, dashboard template, flat admin template, responsive admin template, web app">
         <meta name="author" content="pixelstrap">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
-        <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
-        <title>@yield('title') | CENTRALE-MOBILIER</title>
+        <link rel="icon" href="{{asset('assets/site/assets/images/logo_sb_1.png')}}" type="image/x-icon">
+        <link rel="shortcut icon" href="{{asset('assets/site/assets/images/logo_sb_1.png')}}" type="image/x-icon">
+        <title>@yield('title') | KADII</title>
         <!-- Google font-->
         @include('livewire.dashboard.partials.style')
         @livewireStyles()
@@ -49,19 +49,7 @@
                                 <!-- Bookmark Start-->
                                 <div class="col">
                                     <div class="bookmark pull-right">
-                                        <ul>
-                                            <li><a href="#" data-bs-toggle="tooltip" title="Calender" data-bs-original-title="Calendar"><i data-feather="calendar"></i></a></li>
-                                            <li><a href="#" data-bs-toggle="tooltip" title="Mail" data-bs-original-title="Mail"><i data-feather="mail"></i></a></li>
-                                            <li><a href="#" data-bs-toggle="tooltip" title="Chat" data-bs-original-title="Chat"><i data-feather="message-square"></i></a></li>
-                                            <li>
-                                                <a href="javascript:void(0)"><i class="bookmark-search" data-feather="star"></i></a>
-                                                <form class="form-inline search-form">
-                                                    <div class="mb-3 form-control-search">
-                                                        <input type="text" placeholder="Search..">
-                                                    </div>
-                                                </form>
-                                            </li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                                 <!-- Bookmark Ends-->

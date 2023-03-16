@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'de',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'de',
 
     /*
     |--------------------------------------------------------------------------
@@ -106,7 +106,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'de',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,7 +166,7 @@ return [
          * Package Service Providers...
          */
          Intervention\Image\ImageServiceProvider::class ,
-        
+
         /*
          * Application Service Providers...
          */
@@ -235,5 +235,11 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
 
     ],
+
+    'locales' => [
+        'en' => 'English',
+        'de' => 'Deutsch',
+    ],
+
 
 ];

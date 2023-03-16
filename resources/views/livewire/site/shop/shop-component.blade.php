@@ -40,13 +40,13 @@
             <div class="row align-items-center">
                 <div class="col-md-6 ">
                     <div class="page-title " >
-                        <h1>Boutique</h1>
+                        <h1>Geschäft</h1>
                     </div>
                 </div>
                 <div class="col-md-6 ">
                     <ol class="breadcrumb justify-content-md-end">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active"><a href="#">Boutique</a></li>
+                        <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Geschäft</a></li>
                     </ol>
                 </div>
             </div>
@@ -185,35 +185,7 @@
 
                                 <li class="">
                                     <a class="" href="{{route('site.produit-categorie',['id' => $categorys->id])}}">{{$categorys->name}}</a>
-                                    @if (count($categorys->subcategories) > 0)
-                                    @if ($open)
-                                    <span class="categories_num fs-6 fw-bold" x-on:click="open= false" wire:click="moins" style="cursor: pointer;">-</span>
-                                    @else
-                                    <span class="categories_num fs-6 fw-bold" x-on:click="open= true" wire:click="plus" style="cursor: pointer;">+</span>
-                                    @endif
-                                    <ul class="sub-cate" x-show="open" x-data="{ open1: false }">
-                                    @foreach ($categorys->subcategories as $scategorys)
-                                    <li  style="margin-left: 20px;margin-top: 10px" >
-                                    <a href="{{route('site.produit-categorie',['id' => $categorys->id,'id_scategory' => $scategorys->id,])}}" class="cat-link"> <i class="fa fa-caret-right"></i> {{$scategorys->name}}</a>
 
-                                        @if (count($categorys->subsubcategories) > 0)
-                                        @if ($open1)
-                                        <span class="categories_num fs-6 fw-bold" x-on:click="open1= false" wire:click="moins1" style="cursor: pointer;">-</span>
-                                        @else
-                                        <span class="categories_num fs-6 fw-bold" x-on:click="open1= true" wire:click="plus1" style="cursor: pointer;">+</span>
-                                        @endif
-                                        <ul class="sub-cate" x-show="open1">
-                                        @foreach ($categorys->subsubcategories as $sscategorys)
-                                        <li style="margin-left: 30px;margin-top: 10px" >
-                                        <a href="{{route('site.produit-categorie',['id' => $categorys->id,'id_scategory' => $scategorys->id,'id_sscategory' => $sscategorys->id])}}" class="cat-link"> <i class="fa fa-caret-right"></i> {{$sscategorys->name}}</a>
-                                        </li>
-                                        @endforeach
-                                        </ul>
-                                        @endif
-                                    </li>
-                                    @endforeach
-                                    </ul>
-                                    @endif
                                 </li>
 
                             @endforeach
@@ -221,7 +193,7 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Price: <span class="text-info">{{$min_price}} FCFA - {{$max_price}} FCFA</span></span>
+                        <span>Price: <span class="text-danger">{{$min_price}} FCFA - {{$max_price}} FCFA</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>

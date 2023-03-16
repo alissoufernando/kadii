@@ -11,7 +11,7 @@
             hoverColor: !1,
             regionStyle: {
                 initial: {
-                    fill: "#4466f2"
+                    fill: "#E90001"
                 }
             },
             backgroundColor: "transparent",
@@ -21,7 +21,7 @@
             regionStyle: {
                 initial: {
                     fill: "#ff9f40"
-                } 
+                }
             }
         }), maps("#india").vectorMap({
             map: "in_mill",
