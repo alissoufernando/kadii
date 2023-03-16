@@ -22,7 +22,7 @@
 <script src="{{asset('assets/js/typeahead-search/handlebars.js')}}"></script>
 <script src="{{asset('assets/js/typeahead-search/typeahead-custom.js')}}"></script>
 <script src="{{asset('assets/js/script.js')}}"></script>
-<script src="{{asset('assets/js/theme-customizer/customizer.js')}}"></script>
+{{-- <script src="{{asset('assets/js/theme-customizer/customizer.js')}}"></script> --}}
 <script>
     var bs_rtl_js = "{{asset('assets/css/bootstrap.rtl.min.css')}}";
 </script>

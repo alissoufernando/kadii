@@ -408,7 +408,7 @@
   margin-right: auto;
   margin-left: auto;
   padding: 50px;
-  border: 2px dashed #4466f2;
+  border: 2px dashed #E90001;
   border-radius: 15px;
   -o-border-image: none;
   border-image: none;
@@ -422,7 +422,7 @@
             box-sizing: border-box; }
   .dropzone i {
     font-size: 50px;
-    color: #4466f2; }
+    color: #E90001; }
   .dropzone .dz-message {
     text-align: center;
     margin: 25px 0; }

@@ -79,8 +79,8 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
   color: white;
   text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  background: -webkit-gradient(linear, left top, left bottom, from(#4466f2), to(#4466f2));
-  background: linear-gradient(to bottom, #4466f2 0%, #4466f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#E90001), to(#E90001));
+  background: linear-gradient(to bottom, #E90001 0%, #E90001 100%);
   width: 20px;
   height: 20px;
   line-height: 20px;
@@ -97,14 +97,14 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
     top: -30px;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #4466f2;
+    border-bottom-color: #E90001;
     border-left-color: transparent; }
   .introjs-arrow.top-right {
     top: -10px;
     right: 10px;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #4466f2;
+    border-bottom-color: #E90001;
     border-left-color: transparent; }
   .introjs-arrow.top-middle {
     top: -10px;
@@ -112,7 +112,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
     margin-left: -5px;
     border-top-color: transparent;
     border-right-color: transparent;
-    border-bottom-color: #4466f2;
+    border-bottom-color: #E90001;
     border-left-color: transparent; }
   .introjs-arrow.right {
     right: -30px;
@@ -120,17 +120,17 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: #4466f2; }
+    border-left-color: #E90001; }
   .introjs-arrow.right-bottom {
     bottom: 10px;
     right: -30px;
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    border-left-color: #4466f2; }
+    border-left-color: #E90001; }
   .introjs-arrow.bottom {
     bottom: -30px;
-    border-top-color: #4466f2;
+    border-top-color: #E90001;
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-left-color: transparent; }
@@ -138,14 +138,14 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
     left: -30px;
     top: 10px;
     border-top-color: transparent;
-    border-right-color: #4466f2;
+    border-right-color: #E90001;
     border-bottom-color: transparent;
     border-left-color: transparent; }
   .introjs-arrow.left-bottom {
     left: -30px;
     bottom: 10px;
     border-top-color: transparent;
-    border-right-color: #4466f2;
+    border-right-color: #E90001;
     border-bottom-color: transparent;
     border-left-color: transparent; }
 
@@ -155,7 +155,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
   position: absolute;
   visibility: visible;
   padding: 15px;
-  background-color: #4466f2;
+  background-color: #E90001;
   min-width: 250px;
   max-width: 300px;
   border-radius: 3px;
@@ -164,7 +164,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
   -webkit-transition: opacity 0.1s ease-out;
   transition: opacity 0.1s ease-out;
   color: white;
-  border: 6px solid #4466f2; }
+  border: 6px solid #E90001; }
 
 .introjs-tooltipbuttons {
   text-align: right;
@@ -210,7 +210,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin-right: 5px;
-  color: #4466f2; }
+  color: #E90001; }
 
 .introjs-prevbutton {
   border-radius: 0.2em 0 0 0.2em;
@@ -225,7 +225,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
     border-radius: 0.2em; }
 
 .introjs-disabled {
-  color: #4466f2;
+  color: #E90001;
   border-color: #d4d4d4;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -235,7 +235,7 @@ tr.introjs-showElement > td, tr.introjs-showElement > th {
   background: #d4d4d4;
   opacity: 0.5; }
   .introjs-disabled:hover, .introjs-disabled:focus {
-    color: #4466f2;
+    color: #E90001;
     border-color: #d4d4d4;
     -webkit-box-shadow: none;
             box-shadow: none;

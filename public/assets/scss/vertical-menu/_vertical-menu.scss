@@ -132,9 +132,9 @@
 // :: 1.1. Colors
 // ----------------------------------------------------------
 
-$theme-default: #4466f2 !default;
+$theme-default: #E90001 !default;
 $theme-default-dark:									darken($theme-default, 0%) !default;
-$theme-default-darker: #4466f2 !default;
+$theme-default-darker: #E90001 !default;
 $theme-default-light:									lighten($theme-default, 5%) !default;
 $theme-deafult__white:										#fff !default;
 $theme-deafult__gray:											darken($theme-deafult__white, 34%) !default;

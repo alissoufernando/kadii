@@ -11827,7 +11827,7 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable table.data
   display: none;
   color: #fff;
   text-align: center;
-  background: #4466f2;
+  background: #E90001;
   border: none;
   font-size: 22px;
   padding: 7px;
@@ -23100,7 +23100,7 @@ body.dark-sidebar-body-mix {
       border: 1px solid #b8b8b8;
       padding: 3px; }
       .customizer-contain .customizer-body .color-layout > div {
-        background-color: #4466f2;
+        background-color: #E90001;
         height: 100%;
         width: 100%;
         border-radius: 3px; }
@@ -23111,7 +23111,7 @@ body.dark-sidebar-body-mix {
         .customizer-contain .customizer-body .color-layout .body .contain li {
           height: 1px;
           width: 65%;
-          background-color: #4466f2;
+          background-color: #E90001;
           border-radius: 5px;
           padding: 0;
           margin-left: 10px;
@@ -23121,7 +23121,7 @@ body.dark-sidebar-body-mix {
             position: absolute;
             height: 1px;
             width: 3px;
-            background-color: #4466f2;
+            background-color: #E90001;
             left: -6px;
             border-radius: 5px; }
       .customizer-contain .customizer-body .color-layout[data-attr="color-2"] div {
@@ -25084,8 +25084,8 @@ body.dark-sidebar-body-mix {
   .chat-footer .media-body input {
     padding-left: 20px; }
     .chat-footer .media-body input.form-control:focus {
-      -webkit-box-shadow: 0 0 0 0.2rem #4466f2;
-              box-shadow: 0 0 0 0.2rem #4466f2; }
+      -webkit-box-shadow: 0 0 0 0.2rem #E90001;
+              box-shadow: 0 0 0 0.2rem #E90001; }
 
 .selling-update {
   padding: 40px 0;

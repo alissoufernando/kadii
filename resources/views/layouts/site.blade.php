@@ -13,7 +13,7 @@
         content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/site/assets/images/logo_1.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/site/assets/images/logo_sb_1.png')}}">
     <!-- Animation CSS -->
     <link rel="stylesheet" href="{{ asset('assets/site/assets/css/animate.css') }}">
     <!-- Latest Bootstrap min CSS -->

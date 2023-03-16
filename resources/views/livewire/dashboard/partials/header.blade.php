@@ -1,7 +1,7 @@
 <div class="page-main-header">
         <div class="main-header-right row">
           <div class="main-header-left col-auto px-0 d-lg-none">
-            <div class="logo-wrapper"><a href="index.html"><img src="../assets/images/endless-logo.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="{{route('dashboard')}}"><img src="{{asset('assets/site/assets/images/logo_sb_1.png')}}" alt="" width="100" height="100"></a></div>
           </div>
           <div class="vertical-mobile-sidebar col-auto ps-3 d-none"><i class="fa fa-bars sidebar-bar"></i></div>
           <div class="mobile-sidebar col-auto ps-0 d-block">
@@ -26,9 +26,9 @@
               </li>
               <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
               <li class="onhover-dropdown">
-                    <a class="txt-dark" href="#">
+                    {{-- <a class="txt-dark" href="#">
                         <h6 style="text-transform: uppercase;">{{ (App::getLocale() == 'en') ? 'EN' : App::getLocale() }}</h6>
-                    </a>
+                    </a> --}}
                     <ul class="language-dropdown onhover-show-div p-20">
                       <li><a href="{{ route('lang', 'en' )}}" data-lng="en" class="{{ (App::getLocale()  == 'en') ? 'active' : ''}}"><i class="flag-icon flag-icon-is"></i> English</a></li>
                       <li><a href="{{ route('lang', 'es' )}}" data-lng="es" class="{{ (App::getLocale()  == 'es') ? 'active' : ''}}"><i class="flag-icon flag-icon-um"></i> Española</a></li>
@@ -36,7 +36,7 @@
                       <li><a href="{{ route('lang', 'fr' )}}" data-lng="fr" class="{{ (App::getLocale()  == 'fr') ? 'active' : ''}}"><i class="flag-icon flag-icon-nz"></i> Française</a></li>
                     </ul>
               </li>
-              <li class="onhover-dropdown"><i data-feather="bell"></i><span class="dot"></span>
+              {{-- <li class="onhover-dropdown"><i data-feather="bell"></i><span class="dot"></span>
                 <ul class="notification-dropdown onhover-show-div">
                   <li>Notification <span class="badge rounded-pill badge-primary pull-right">3</span></li>
                   <li>
@@ -65,10 +65,10 @@
                   </li>
                   <li class="bg-light txt-dark"><a href="#">All</a> notification</li>
                 </ul>
-              </li>
-              <li><a href="#"><i class="right_side_toggle" data-feather="message-circle"></i><span class="dot"></span></a></li>
+              </li> --}}
+              {{-- <li><a href="#"><i class="right_side_toggle" data-feather="message-circle"></i><span class="dot"></span></a></li> --}}
               <li class="onhover-dropdown">
-                <div class="media align-items-center"><img class="align-self-center pull-right img-50 rounded-circle" src="../assets/images/dashboard/user.png" alt="header-user">
+                <div class="media align-items-center"><img class="align-self-center pull-right img-50 rounded-circle" src="{{ asset('assets/images/user/1.png') }}" alt="header-user">
                   <div class="dotted-animation"><span class="animate-circle"></span><span class="main-circle"></span></div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div p-20">

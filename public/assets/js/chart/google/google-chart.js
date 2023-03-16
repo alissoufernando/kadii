@@ -22,7 +22,7 @@ function drawBasic() {
         },
         height: 400,
         width:'100%',
-        colors: ["#4466f2", "#1ea6ec", "#22af47"]
+        colors: ["#E90001", "#1ea6ec", "#22af47"]
       },
     c = new google.charts.Bar(document.getElementById("column-chart1"));
     c.draw(a, google.charts.Bar.convertOptions(b))
@@ -46,7 +46,7 @@ function drawBasic() {
         },
         height: 400,
         width:'100%',
-        colors: ["#4466f2", "#1ea6ec", "#22af47"]
+        colors: ["#E90001", "#1ea6ec", "#22af47"]
       },
       c = new google.charts.Bar(document.getElementById("column-chart2"));
       c.draw(a, google.charts.Bar.convertOptions(b))
@@ -54,7 +54,7 @@ function drawBasic() {
   if ($("#bar-chart1").length > 0) {
       var data = google.visualization.arrayToDataTable([
         ["Element", "Density", { role: "style" } ],
-        ["Copper", 10, "#4466f2"],
+        ["Copper", 10, "#E90001"],
         ["Silver", 12, "#1ea6ec"],
         ["Gold", 14, "#22af47"],
         ["Platinum", 16, "color: #007bff"]
@@ -64,7 +64,7 @@ function drawBasic() {
         { calc: "stringify",
           sourceColumn: 1,
           type: "string",
-          role: "annotation" 
+          role: "annotation"
         },
         2]);
       var options = {
@@ -83,7 +83,7 @@ function drawBasic() {
         ["Element", "Density", {
           role: "style"
         }],
-        ["Copper", 10, "#4466f2"],
+        ["Copper", 10, "#E90001"],
         ["Silver", 12, "#1ea6ec"],
         ["Gold", 14, "#22af47"],
         ["Platinum", 16, "color: #007bff"]
@@ -122,7 +122,7 @@ function drawBasic() {
         title: 'My Daily Activities',
         width:'100%',
         height: 400,
-       colors: ["#4466f2", "#1ea6ec", "#22af47", "#007bff", "#FF5370"]
+       colors: ["#E90001", "#1ea6ec", "#22af47", "#007bff", "#FF5370"]
       };
       var chart = new google.visualization.PieChart(document.getElementById('pie-chart1'));
       chart.draw(data, options);
@@ -141,7 +141,7 @@ function drawBasic() {
         is3D: true,
         width:'100%',
         height: 400,
-        colors: ["#4466f2", "#1ea6ec", "#22af47", "#007bff", "#FF5370"]
+        colors: ["#E90001", "#1ea6ec", "#22af47", "#007bff", "#FF5370"]
       };
       var chart = new google.visualization.PieChart(document.getElementById('pie-chart2'));
       chart.draw(data, options);
@@ -160,7 +160,7 @@ function drawBasic() {
         pieHole: 0.4,
         width:'100%',
         height: 400,
-        colors: ["#4466f2", "#1ea6ec", "#22af47", "#007bff", "#FF5370", "#FF5370"]
+        colors: ["#E90001", "#1ea6ec", "#22af47", "#007bff", "#FF5370", "#FF5370"]
       };
       var chart = new google.visualization.PieChart(document.getElementById('pie-chart3'));
       chart.draw(data, options);
@@ -169,26 +169,26 @@ function drawBasic() {
       var data = google.visualization.arrayToDataTable([
         ['Language', 'Speakers (in millions)'],
         ['Assamese', 13],
-        ['Bengali', 83], 
+        ['Bengali', 83],
         ['Bodo', 1.4],
-        ['Dogri', 2.3], 
-        ['Gujarati', 46], 
+        ['Dogri', 2.3],
+        ['Gujarati', 46],
         ['Hindi', 300],
-        ['Kannada', 38], 
-        ['Kashmiri', 5.5], 
+        ['Kannada', 38],
+        ['Kashmiri', 5.5],
         ['Konkani', 5],
-        ['Maithili', 20], 
-        ['Malayalam', 33], 
+        ['Maithili', 20],
+        ['Malayalam', 33],
         ['Manipuri', 1.5],
-        ['Marathi', 72], 
-        ['Nepali', 2.9], 
+        ['Marathi', 72],
+        ['Nepali', 2.9],
         ['Oriya', 33],
-        ['Punjabi', 29], 
-        ['Sanskrit', 0.01], 
+        ['Punjabi', 29],
+        ['Sanskrit', 0.01],
         ['Santhali', 6.5],
-        ['Sindhi', 2.5], 
-        ['Tamil', 61], 
-        ['Telugu', 74], 
+        ['Sindhi', 2.5],
+        ['Tamil', 61],
+        ['Telugu', 74],
         ['Urdu', 52]
       ]);
       var options = {
@@ -203,7 +203,7 @@ function drawBasic() {
           15: {offset: 0.5},
         },
           // colors: ["#ab8ce4", "#26c6da"]
-          colors: ["#4466f2", "#1ea6ec", "#22af47", "#007bff", "#ff9f40", "#FF5370","#4466f2", "#1ea6ec", "#22af47", "#007bff", "#ff9f40", "#FF5370","#4466f2", "#1ea6ec", "#22af47", "#007bff", "#ff9f40", "#FF5370", "#fd7b6c", "#22af47","#007bff", "#ff9f40"]
+          colors: ["#E90001", "#1ea6ec", "#22af47", "#007bff", "#ff9f40", "#FF5370","#E90001", "#1ea6ec", "#22af47", "#007bff", "#ff9f40", "#FF5370","#E90001", "#1ea6ec", "#22af47", "#007bff", "#ff9f40", "#FF5370", "#fd7b6c", "#22af47","#007bff", "#ff9f40"]
         };
         var chart = new google.visualization.PieChart(document.getElementById('pie-chart4'));
         chart.draw(data, options);
@@ -233,7 +233,7 @@ function drawBasic() {
           title: 'Box Office Earnings in First Two Weeks of Opening',
           subtitle: 'in millions of dollars (USD)'
         },
-        colors: ["#4466f2", "#1ea6ec", "#22af47"],
+        colors: ["#E90001", "#1ea6ec", "#22af47"],
         height: 500,
         width:'100%',
       };
@@ -257,7 +257,7 @@ function drawBasic() {
         series: {5: {type: 'line'}},
         height: 500,
         width:'100%',
-        colors: ["#4466f2", "#1ea6ec", "#22af47", "#FF5370", "#007bff"]
+        colors: ["#E90001", "#1ea6ec", "#22af47", "#FF5370", "#007bff"]
     };
     var chart = new google.visualization.ComboChart(document.getElementById('combo-chart'));
     chart.draw(data, options);
@@ -276,7 +276,7 @@ function drawBasic() {
         vAxis: {minValue: 0},
         width:'100%',
         height: 400,
-        colors: ["#4466f2", "#1ea6ec"]
+        colors: ["#E90001", "#1ea6ec"]
       };
       var chart = new google.visualization.AreaChart(document.getElementById('area-chart1'));
       chart.draw(data, options);
@@ -295,7 +295,7 @@ function drawBasic() {
       vAxis: {minValue: 0},
       width:'100%',
       height: 400,
-      colors: ["#4466f2", "#1ea6ec", "#22af47", "#007bff"]
+      colors: ["#E90001", "#1ea6ec", "#22af47", "#007bff"]
     };
     var chart = new google.visualization.AreaChart(document.getElementById('area-chart2'));
     chart.draw(data, options);

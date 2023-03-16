@@ -406,7 +406,7 @@
                         <div class="heading_s4 text-center">
                             <h2>Unsere neusten Produkte</h2>
                         </div>
-                        <<p class="text-center leads"> </p>
+                        <p class="text-center leads"> </p>
                     </div>
                 </div>
                 <div class="row shop_container">

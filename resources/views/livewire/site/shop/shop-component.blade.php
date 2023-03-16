@@ -185,7 +185,7 @@
 
                                 <li class="">
                                     <a class="" href="{{route('site.produit-categorie',['id' => $categorys->id])}}">{{$categorys->name}}</a>
-                                   
+
                                 </li>
 
                             @endforeach
@@ -193,7 +193,7 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Price: <span class="text-info">{{$min_price}} FCFA - {{$max_price}} FCFA</span></span>
+                        <span>Price: <span class="text-danger">{{$min_price}} FCFA - {{$max_price}} FCFA</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>

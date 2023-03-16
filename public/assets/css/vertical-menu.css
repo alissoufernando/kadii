@@ -126,7 +126,7 @@
     background: rgba(171, 140, 228, 0.1); }
   .pixelstrap ul a, .pixelstrap ul a:hover, .pixelstrap ul a:focus, .pixelstrap ul a:active {
     background: transparent;
-    color: #4466f2;
+    color: #E90001;
     font-size: 14px;
     text-shadow: none; }
   .pixelstrap ul a.current {
@@ -242,10 +242,10 @@
       .pixelstrap ul a:hover, .pixelstrap ul a:focus, .pixelstrap ul a:active, .pixelstrap ul a.highlighted {
         border: 0 !important;
         background: transparent;
-        color: #4466f2;
+        color: #E90001;
         border-radius: 0 !important; }
       .pixelstrap ul a:hover, .pixelstrap ul a:focus, .pixelstrap ul a:active, .pixelstrap ul a.highlighted {
-        color: #4466f2; }
+        color: #E90001; }
         .pixelstrap ul a:hover .sub-arrow, .pixelstrap ul a:focus .sub-arrow, .pixelstrap ul a:active .sub-arrow, .pixelstrap ul a.highlighted .sub-arrow {
           top: 50%;
           right: 15px;
@@ -256,9 +256,9 @@
             right: 5px;
             color: gray; }
       .pixelstrap ul a.current {
-        color: #4466f2; }
+        color: #E90001; }
       .pixelstrap ul a.disabled {
-        color: #4466f2; }
+        color: #E90001; }
       .pixelstrap ul a .sub-arrow {
         top: 50%;
         right: 15px;
@@ -289,11 +289,11 @@
     overflow: hidden;
     border-width: 8px;
     border-style: dashed dashed solid dashed;
-    border-color: transparent transparent #4466f2 transparent; }
+    border-color: transparent transparent #E90001 transparent; }
   .pixelstrap .scroll-down-arrow {
     top: 6px;
     border-style: solid dashed dashed dashed;
-    border-color: #4466f2 transparent transparent transparent; }
+    border-color: #E90001 transparent transparent transparent; }
   .pixelstrap.sm-rtl.sm-vertical a .sub-arrow {
     right: auto;
     left: 10px;

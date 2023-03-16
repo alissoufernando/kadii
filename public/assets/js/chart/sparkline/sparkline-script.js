@@ -6,16 +6,16 @@
             width: '100%',
             height: '100%',
             tooltipClassname: 'chart-sparkline',
-            lineColor: '#4466f2',
+            lineColor: '#E90001',
             fillColor: 'rgba(68, 102, 242, 0.40)',
-            highlightLineColor: "#4466f2",
-            highlightSpotColor: "#4466f2",
-            targetColor: "#4466f2",
-            performanceColor: "#4466f2",
-            boxFillColor: "#4466f2",
-            medianColor: "#4466f2",
-            minSpotColor: "#4466f2"
-        }); 
+            highlightLineColor: "#E90001",
+            highlightSpotColor: "#E90001",
+            targetColor: "#E90001",
+            performanceColor: "#E90001",
+            boxFillColor: "#E90001",
+            medianColor: "#E90001",
+            minSpotColor: "#E90001"
+        });
     });
     var mrefreshinterval = 500;
     var lastmousex = -1;
@@ -48,15 +48,15 @@
                 width: '100%',
                 height: '100%',
                 tooltipClassname: 'chart-sparkline',
-                lineColor: '#4466f2',
+                lineColor: '#E90001',
                 fillColor: 'rgba(68, 102, 242, 0.40)',
-                highlightLineColor: "#4466f2",
-                highlightSpotColor: "#4466f2",
-                targetColor: "#4466f2",
-                performanceColor: "#4466f2",
-                boxFillColor: "#4466f2",
-                medianColor: "#4466f2",
-                minSpotColor: "#4466f2"
+                highlightLineColor: "#E90001",
+                highlightSpotColor: "#E90001",
+                targetColor: "#E90001",
+                performanceColor: "#E90001",
+                boxFillColor: "#E90001",
+                medianColor: "#E90001",
+                minSpotColor: "#E90001"
             });
         }
         lastmousetime = timenow;
@@ -82,7 +82,7 @@
         composite: '!0',
         tooltipClassname: 'chart-sparkline',
         chartRangeMax: '40',
-        lineColor: '#4466f2',
+        lineColor: '#E90001',
         fillColor: 'rgba(68, 102, 242, 0.40)',
         highlightLineColor: 'rgba(68, 102, 242, 0.40)',
         highlightSpotColor: 'rgba(68, 102, 242, 0.8)'
@@ -97,27 +97,27 @@ var sparkline_chart = {
             width: '100%',
             height: '100%',
             tooltipClassname: 'chart-sparkline',
-            lineColor: '#4466f2',
+            lineColor: '#E90001',
             fillColor: 'transparent',
-            highlightLineColor: "#4466f2",
-            highlightSpotColor: "#4466f2",
-            targetColor: "#4466f2",
-            performanceColor: "#4466f2",
-            boxFillColor: "#4466f2",
-            medianColor: "#4466f2",
-            minSpotColor: "#4466f2"
+            highlightLineColor: "#E90001",
+            highlightSpotColor: "#E90001",
+            targetColor: "#E90001",
+            performanceColor: "#E90001",
+            boxFillColor: "#E90001",
+            medianColor: "#E90001",
+            minSpotColor: "#E90001"
         });
     }), $("#bar-chart-sparkline").sparkline([5, 2, 2, 4, 9, 5, 7, 5, 2, 2, 6], {
         type: 'bar',
         barWidth: '60',
         height: '100%',
         tooltipClassname: 'chart-sparkline',
-        barColor: '#4466f2'
+        barColor: '#E90001'
     }), $("#pie-sparkline-chart").sparkline([1.5, 1, 1, 0.5], {
         type: 'pie',
         width: '100%',
         height: '100%',
-        sliceColors: ['#38d3e7','#4466f2','#ff5a75', '#4393e6'],
+        sliceColors: ['#38d3e7','#E90001','#ff5a75', '#4393e6'],
         tooltipClassname: 'chart-sparkline'
     }),$("#linechart-defaultdashboard").sparkline([5, 30, 27, 35, 30, 50, 70], {
         type: 'line',

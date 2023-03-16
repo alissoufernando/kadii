@@ -1,7 +1,7 @@
 <!-- Page Sidebar Start-->
 <div class="page-sidebar">
   <div class="main-header-left d-none d-lg-block">
-    <div class="logo-wrapper"><a href="/"><img src="{{asset('assets/images/endless-logo.png')}}" alt=""></a></div>
+    <div class="logo-wrapper"><a href="{{route('dashboard')}}"><img src="{{asset('assets/site/assets/images/logo_sb_1.png')}}" alt="" width="100" height="100"></a></div>
   </div>
   <div class="sidebar custom-scrollbar">
 
@@ -53,7 +53,7 @@
     </div>
     <div class="chat-box">
         <div class="people-list friend-list">
-          <ul class="list">
+          {{-- <ul class="list">
             <li class="clearfix"><img class="rounded-circle user-image" src="{{asset('assets/images/user/1.jpg')}}" alt="">
               <div class="status-circle online"></div>
               <div class="about">
@@ -103,7 +103,7 @@
                 <div class="status"> Online</div>
               </div>
             </li>
-          </ul>
+          </ul> --}}
         </div>
       </div>
   </div>
