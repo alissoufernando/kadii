@@ -41,13 +41,13 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="page-title">
-                        <h1>Login</h1>
+                        <h1>Anmeldung</h1>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ol class="breadcrumb justify-content-md-end">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active">Login</li>
+                        <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                        <li class="breadcrumb-item active">Anmeldung</li>
                     </ol>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <div class="login_wrap">
             		<div class="padding_eight_all bg-white">
                         <div class="heading_s1">
-                            <h3>Login</h3>
+                            <h3>Anmeldung</h3>
                         </div>
                         <form method="post" action="{{route('login')}}">
                             @csrf
@@ -81,14 +81,14 @@
                                     </div>
                                 </div>
                                 @if (Route::has('password.request'))
-                                <a href="{{ route('password.request') }}">Forgot password?</a>
+                                <a href="{{ route('password.request') }}">Passwort vergessen?</a>
                                 @endif
                             </div>
                             <div class="form-group mb-3">
-                                <button type="submit" class="btn btn-fill-out btn-block" name="login">Login</button>
+                                <button type="submit" class="btn btn-fill-out btn-block" name="login">Anmeldung</button>
                             </div>
                         </form>
-                        <div class="form-note text-center">Don't Have an Account? <a href="{{route('register')}}">Sign up now</a></div>
+                        <div class="form-note text-center">Sie haben kein Konto? <a href="{{route('register')}}">Jetzt registrieren</a></div>
                     </div>
                 </div>
             </div>

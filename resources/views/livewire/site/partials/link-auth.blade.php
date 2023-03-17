@@ -17,10 +17,10 @@
             <ul class="header_list menulink">
 
                 @if (Auth::guest())
-                <li><a href="{{route('login')}}" class="{{ Route::currentRouteName()== 'login' ? 'active' : '' }}"><i class="ti-user"></i><span>Login</span></a></li>
+                <li><a href="{{route('login')}}" class="{{ Route::currentRouteName()== 'login' ? 'active' : '' }}"><i class="ti-user"></i><span>Anmeldung</span></a></li>
                 {{-- <li><a href="{{route('register')}}" class="{{ Route::currentRouteName()== 'register' ? 'active' : '' }}"><i class="ti-user"></i><span>Register</span></a></li> --}}
                 @else
-                <li><a href="{{route('site.my-account')}}" class="{{ Route::currentRouteName()== 'site.my-account' ? 'active' : '' }}"><i class="ti-user"></i><span>Mon Compte</span></a></li>
+                <li><a href="{{route('site.my-account')}}" class="{{ Route::currentRouteName()== 'site.my-account' ? 'active' : '' }}"><i class="ti-user"></i><span>Mein Konto</span></a></li>
 
                 @endif
             </ul>
