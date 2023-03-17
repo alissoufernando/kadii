@@ -47,7 +47,7 @@
         <div id="carouselExampleControls" class="carousel slide carousel-fade light_arrow carousel_style2"
                 data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/a2.jpg')}}">
+                    <div class="carousel-item active background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/bbq2.jpg')}}">
                         <div class="banner_slide_content banner_content_inner">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/a1.jpg')}}">
+                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/bbq3.jpg')}}">
                         <div class="banner_slide_content banner_content_inner">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/1.jpg')}}">
+                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/bois1.jpg')}}">
                         <div class="banner_slide_content banner_content_inner">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/2.jpg')}}">
+                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/bois.jpg')}}">
                         <div class="banner_slide_content banner_content_inner">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -118,9 +118,7 @@
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
                                                 data-animation-delay="0.3s">Willkommen !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
-                                                data-animation-delay="0.4s">Nous sommes sûrs que vous constaterez que nos coffres-forts sont fidèles à la sécurité des clients.
-
-                                                Avec une fiabilité éprouvée dans plus de 50 ans d'expérience, nous sommes convaincus d'être votre meilleur partenaire commercial.
+                                                data-animation-delay="0.4s">Wenn es um Zuverlässigkeit geht, sind wir für Sie da.Vertraue uns !!!
                                             </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
                                                 data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
@@ -130,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/3.jpg')}}">
+                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/bbq6.jpeg')}}">
                         <div class="banner_slide_content banner_content_inner">
                             <div class="container">
                                 <div class="row justify-content-center">
@@ -139,9 +137,9 @@
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
                                                 data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Nous sommes </h1>
+                                                data-animation-delay="0.3s"> </h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
-                                                data-animation-delay="0.4s"> les représentants exclusif au Bénin et dans la sous région de la gamme MEX
+                                                data-animation-delay="0.4s"> Das Beste, wir
                                             </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
                                                 data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
@@ -151,7 +149,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/4.jpg')}}">
+                    <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('assets/site/assets/images/barbecue.jpg')}}">
                         <div class="banner_slide_content banner_content_inner">
                             <div class="container">
                                 <div class="row justify-content-center">
