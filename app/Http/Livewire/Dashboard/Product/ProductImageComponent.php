@@ -87,6 +87,11 @@ class ProductImageComponent extends Component
                 $image = $full;
                 $filename_thumb =  'thumb-' .uniqid() . '.' . $image->getClientOriginalExtension();
                 $filename_full =  'full-' .uniqid() . '.' . $image->getClientOriginalExtension();
+                $save_path = storage_path().'/app/public/galerie/';
+
+                if (!file_exists($save_path)) {
+                    mkdir($save_path, 666, true);
+                }
                 $path_thumb =storage_path().'/app/public/galerie/'.$filename_thumb;
                 $path_full =storage_path().'/app/public/galerie/'.$filename_full;
                 Image::make($image->getRealPath())->save($path_thumb);
