@@ -5,12 +5,7 @@ namespace App\Http\Livewire\Dashboard\Product;
 use App\Models\Product;
 use Livewire\Component;
 use App\Models\Category;
-use App\Models\Attribute;
-use App\Models\Subcategory;
 use Illuminate\Support\Str;
-use App\Models\AttributeValue;
-use App\Models\Subsubcategory;
-use App\Models\ProductAttribute;
 
 class ProductEditComponent extends Component
 {
@@ -19,7 +14,6 @@ class ProductEditComponent extends Component
     public $description;
     public $normal_price;
     public $sale_price;
-    public $sku;
     public $quantity;
     public $quantity_alert;
     public $categorie_id;
@@ -35,7 +29,7 @@ class ProductEditComponent extends Component
         // Clean errors if were visible before
         $this->resetErrorBag();
         $this->resetValidation();
-        $this->reset(['name', 'slug', 'normal_price', 'sale_price','quantity', 'quantity_alert', 'sku', 'categorie_id','description']);
+        $this->reset(['name', 'slug', 'normal_price', 'sale_price','quantity', 'quantity_alert', 'categorie_id','description']);
     }
     public function mount($id) {
 
@@ -50,7 +44,6 @@ class ProductEditComponent extends Component
         $this->sale_price = $myProduct->sale_price;
         $this->quantity = $myProduct->quantity;
         $this->quantity_alert = $myProduct->quantity_alert;
-        $this->sku = $myProduct->sku;
         $this->categorie_id = $myProduct->categorie_id;
         $this->description = $myProduct->description;
     }
@@ -74,7 +67,6 @@ class ProductEditComponent extends Component
         $myProduct->sale_price = $this->sale_price;
         $myProduct->quantity = $this->quantity;
         $myProduct->quantity_alert = $this->quantity_alert;
-        $myProduct->sku = $this->sku;
         $myProduct->priceRetour = $this->price_r;
         $myProduct->priceCaisson = $this->price_c;
         $myProduct->categorie_id = $this->categorie_id;

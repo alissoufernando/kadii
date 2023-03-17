@@ -5,11 +5,7 @@ namespace App\Http\Livewire\Dashboard\Product;
 use App\Models\Product;
 use Livewire\Component;
 use App\Models\Category;
-use App\Models\Attribute;
-use App\Models\Subcategory;
 use Illuminate\Support\Str;
-use App\Models\AttributeValue;
-use App\Models\Subsubcategory;
 
 class ProductCreateComponent extends Component
 {
@@ -19,7 +15,6 @@ class ProductCreateComponent extends Component
     public $description;
     public $normal_price;
     public $sale_price;
-    public $sku;
     public $quantity;
     public $quantity_alert;
     public $categorie_id;
@@ -33,7 +28,7 @@ class ProductCreateComponent extends Component
         // Clean errors if were visible before
         $this->resetErrorBag();
         $this->resetValidation();
-        $this->reset(['name', 'slug', 'normal_price', 'sale_price','quantity', 'quantity_alert', 'sku', 'categorie_id','description']);
+        $this->reset(['name', 'slug', 'normal_price', 'sale_price','quantity', 'quantity_alert', 'categorie_id','description']);
 
     }
     public function mount() {
@@ -57,7 +52,6 @@ class ProductCreateComponent extends Component
                 'sale_price' =>  'required',
                 'quantity' =>  'required',
                 'quantity_alert' =>  'required',
-                'sku' =>  'required',
                 'categorie_id' =>  'required',
                 'description' => 'required',
             ]);
@@ -72,7 +66,6 @@ class ProductCreateComponent extends Component
         $product->sale_price = $this->sale_price;
         $product->quantity = $this->quantity;
         $product->quantity_alert = $this->quantity_alert;
-        $product->sku = $this->sku;
         $product->categorie_id = $this->categorie_id;
         $product->description = $this->description;
         $product->status_stock = $this->status_stock;

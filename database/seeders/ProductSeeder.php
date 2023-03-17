@@ -23,7 +23,6 @@ class ProductSeeder extends Seeder
 
         for ($i = 0; $i < 10; $i++) {
             Product::create([
-                'sku' => 'DIGI' . $faker->unique()->numberBetween(100, 500),
                 'name' => $productName,
                 'slug' => Str::slug($faker->unique()->words($nb = 2, $asText = true)),
                 'description' => $faker->text(500),

@@ -27,25 +27,22 @@
               <div class="row">
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                             <label class="form-label" for="name">Nom du product:</label>
                             <input class="form-control" id="name" type="text" placeholder="Nom du produit" required="required" wire:model="name" wire:keyup="generateSlug">
                           </div>
-                          <div class="col-md-6 mb-3">
+                          <div class="col-md-12 mb-3">
                               <label class="form-label" for="slug">slug du produit:</label>
                               <input class="form-control" id="slug" type="text" placeholder="slug" wire:model="slug">
                           </div>
-                          <div class="col-md-6 mb-3">
+                          <div class="col-md-12 mb-3">
                             <label class="form-label" for="normal_price">Prix de vente:</label>
                             <input class="form-control" id="normal_price" type="text" placeholder="prix vente" wire:model="normal_price">
                           </div>
-                          <div class="col-md-6 mb-3">
-                              <label class="form-label" for="sku">SKU du produit:</label>
-                              <input class="form-control" id="sku" type="text" placeholder="sku" wire:model="sku">
-                          </div>
-                            <div class="col-md-6 mb-3">
+                          
+                            <div class="col-md-12 mb-3">
                               <label class="form-label" for="categorie_id">Catégories:</label>
-                                  <select class="form-select" required="" wire:model="categorie_id" wire:change="changeSubcategory">
+                                  <select class="form-select" required="" wire:model="categorie_id" >
                                       <option value="0">None</option>
                                       @foreach ($categorie as $categories)
                                       <option value="{{$categories->id}}">{{$categories->name}}</option>
@@ -57,15 +54,15 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                           <label class="form-label" for="sale_price">Prix promo:</label>
                           <input class="form-control" id="sale_price" type="text" placeholder="prix promo" wire:model="sale_price">
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                           <label class="form-label" for="quantity">Quantité:</label>
                           <input class="form-control" id="quantity" type="text" placeholder="la quantité" wire:model="quantity">
                         </div>
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-12 mb-3">
                           <label class="form-label" for="quantity_alert">Quantité d'Alert:</label>
                           <input class="form-control" id="quantity_alert" type="text" placeholder="la quantité d'alert" wire:model="quantity_alert">
                         </div>
