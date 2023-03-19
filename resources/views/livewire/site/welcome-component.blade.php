@@ -158,10 +158,10 @@
                                             <h4 class="mb-3 bg_strip staggered-animation text-uppercase"
                                                 data-animation="fadeInDown" data-animation-delay="0.2s">Ihr Holz- und Grillbedarf</h4>
                                             <h1 class="staggered-animation" data-animation="fadeInDown"
-                                                data-animation-delay="0.3s">Wir haben !!</h1>
+                                                data-animation-delay="0.3s">Es wissen !!</h1>
                                             <h3 class="staggered-animation" data-animation="fadeInUp"
                                                 data-animation-delay="0.4s">
-                                                des comptoirs Mex sur mesure pour votre Hall d'accueil.
+                                                Wir sind bereit, all Ihre Grill-, Brennholz- und Generatorbedürfnisse zu erfüllen.
                                             </h3>
                                             <a class="btn btn-white staggered-animation" href="{{ route('site.shop')}}"
                                                 data-animation="fadeInUp" data-animation-delay="0.5s">Geschäft</a>
