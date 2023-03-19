@@ -36,18 +36,19 @@
     @section('sous-menu')
 <!-- START SECTION BREADCRUMB -->
 <div class="breadcrumb_section bg_gray page-title-mini">
-    <div class="container minimenu"><!-- STRART CONTAINER -->
+    <div class="container minimenu">
+        <!-- STRART CONTAINER -->
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="page-title">
-                    <h1>Shopping Cart</h1>
+                    <h1>Einkaufswagen</h1>
                 </div>
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Produits</a></li>
-                    <li class="breadcrumb-item active">Shopping Cart</li>
+                    <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                    <li class="breadcrumb-item"><a href="#">Produkts</a></li>
+                    <li class="breadcrumb-item active">Einkaufswagen</li>
                 </ol>
             </div>
         </div>
@@ -70,11 +71,11 @@
                             <thead>
                                 <tr>
                                     <th class="product-thumbnail">&nbsp;</th>
-                                    <th class="product-name">Product</th>
-                                    <th class="product-price">Price</th>
-                                    <th class="product-quantity">Quantity</th>
-                                    <th class="product-subtotal">Total</th>
-                                    <th class="product-remove">Remove</th>
+                                    <th class="product-name">Produkt</th>
+                                    <th class="product-price">Preis</th>
+                                    <th class="product-quantity">Menge</th>
+                                    <th class="product-subtotal">Gesamt</th>
+                                    <th class="product-remove">Entfernen</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -90,15 +91,15 @@
                                     <td class="product-thumbnail"><a href="#"><img src="{{asset('storage/galerie')}}/{{$images[0]}}" alt="{{$item->name}}"></a></td>
                                     @endempty
                                     <td class="product-name" data-title="Product"><a href="#">{{$item->name}}</a></td>
-                                    <td class="product-price" data-title="Price">{{$item->price}} FCFA</td>
+                                    <td class="product-price" data-title="Price">{{$item->price}} €</td>
                                     <td class="product-quantity" data-title="Quantity"><div class="quantity">
                                     <input type="button" value="-" class="minus" wire:click.prevent ="decreaseQuantity('{{$item->rowId}}')">
                                     <input type="text" name="quantity" value="{{$item->qty}}" title="Qty" class="qty" size="4">
                                     <input type="button" value="+" class="plus" wire:click.prevent ="increaseQuantity('{{$item->rowId}}')">
                                   </div>
-                                  <p class="text-center"> <a href="" wire:click.prevent ="switchToSaveForLater('{{$item->rowId}}')"> Save for later</a></p>
+                                  <p class="text-center"> <a href="" wire:click.prevent ="switchToSaveForLater('{{$item->rowId}}')"> Speichern Sie für später</a></p>
                                 </td>
-                                      <td class="product-subtotal" data-title="Total">{{$item->subtotal}} FCFA</td>
+                                      <td class="product-subtotal" data-title="Total">{{$item->subtotal}} €</td>
                                     <td class="product-remove" data-title="Remove"><a href="#" wire:click.prevent ="destroy('{{$item->rowId}}')"><i class="ti-close"></i></a></td>
                                 </tr>
                                 @endforeach
@@ -115,9 +116,9 @@
                                                     <p class="text-danger">{{Session::get('message')}}</p>
                                                 @endif
                                                 <div class="coupon field_form input-group">
-                                                    <input type="text" value="" class="form-control form-control-sm" placeholder="Enter Coupon Code.." wire:model="couponCode">
+                                                    <input type="text" value="" class="form-control form-control-sm" placeholder="Gutschein-Code eingeben.." wire:model="couponCode">
                                                     <div class="input-group-append">
-                                                        <button class="btn btn-fill-out btn-sm" type="submit">Apply Coupon</button>
+                                                        <button class="btn btn-fill-out btn-sm" type="submit">Gutschein anwenden</button>
                                                     </div>
                                                 </div>
                                             </form>
@@ -126,7 +127,7 @@
 
                                            @endif
                                             <div class="col-lg-8 col-md-6  text-start  text-md-end">
-                                                <button class="btn btn-line-fill btn-sm" type="submit">Update Cart</button>
+                                                <button class="btn btn-line-fill btn-sm" type="submit">Einkaufswagen aktualisieren</button>
                                             </div>
                                         </div>
                                     </td>
@@ -136,7 +137,7 @@
                         @else
 
                             <p class="text-center">
-                                Aucun produit n'a été ajouter
+                                Es wurden keine Produkte hinzugefügt
                             </p>
 
 
@@ -154,14 +155,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="heading_s1 mb-3">
-                        <h6>Calculate Shipping</h6>
+                        <h6>Berechnen Sie Versandkosten</h6>
                     </div>
                     <form class="field_form shipping_calculator">
                         <div class="form-row">
                             <div class="form-group col-lg-12 mb-3">
                                 <div class="custom_select">
                                     <select class="form-control">
-                                        <option value="">Choose a option...</option>
+                                        <option value="">Wähle eine Option...</option>
                                         <option value="AX">Aland Islands</option>
                                         <option value="AF">Afghanistan</option>
                                         <option value="AL">Albania</option>
@@ -412,15 +413,15 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-6 mb-3">
-                                <input required="required" placeholder="State / Country" class="form-control" name="name" type="text">
+                                <input required="required" placeholder="Land" class="form-control" name="name" type="text">
                             </div>
                             <div class="form-group col-lg-6 mb-3">
-                                <input required="required" placeholder="PostCode / ZIP" class="form-control" name="name" type="text">
+                                <input required="required" placeholder="PLZ" class="form-control" name="name" type="text">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-lg-12 mb-3">
-                                <button class="btn btn-fill-line" type="submit">Update Totals</button>
+                                <button class="btn btn-fill-line" type="submit">Summen aktualisieren</button>
                             </div>
                         </div>
                     </form>
@@ -428,60 +429,60 @@
                 <div class="col-md-6">
                     <div class="border p-3 p-md-4">
                         <div class="heading_s1 mb-3">
-                            <h6>Cart Totals</h6>
+                            <h6>Einkaufswagen-Gesamtsummen</h6>
                         </div>
                         <div class="table-responsive">
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="cart_total_label">Cart Subtotal</td>
-                                        <td class="cart_total_amount">{{Cart::instance('cart')->subtotal()}} FCFA</td>
+                                        <td class="cart_total_label">Warenkorb Zwischensumme</td>
+                                        <td class="cart_total_amount">{{Cart::instance('cart')->subtotal()}} €</td>
                                     </tr>
                                     @if (Session::has('coupon'))
                                     <tr>
-                                        <td class="cart_total_label">Discount ({{Session::instance('coupon')['code']}}) <a href="#" wire:click.prevent="removeCoupon"> <i class="fa fa-trash-o text-danger"></i> </a> </td>
-                                        <td class="cart_total_amount"> - {{number_format($discount,2)}} FCFA</td>
+                                        <td class="cart_total_label">Rabatt ({{Session::instance('coupon')['code']}}) <a href="#" wire:click.prevent="removeCoupon"> <i class="fa fa-trash-o text-danger"></i> </a> </td>
+                                        <td class="cart_total_amount"> - {{number_format($discount,2)}} €</td>
                                     </tr>
                                     <tr>
-                                        <td class="cart_total_label">Cart Tax ({{config('cart.tax')}}%) </td>
-                                        <td class="cart_total_amount">{{number_format($taxAfterDiscount, 2)}} FCFA</td>
+                                        <td class="cart_total_label">Warenkorbsteuer ({{config('cart.tax')}}%) </td>
+                                        <td class="cart_total_amount">{{number_format($taxAfterDiscount, 2)}} €</td>
                                     </tr>
                                     <tr>
-                                        <td class="cart_total_label">Cart Subtotal</td>
-                                        <td class="cart_total_amount">{{number_format($subtotalAfterDiscount,2)}} FCFA</td>
+                                        <td class="cart_total_label">Warenkorb Zwischensumme</td>
+                                        <td class="cart_total_amount">{{number_format($subtotalAfterDiscount,2)}} €</td>
                                     </tr>
                                     <tr>
-                                        <td class="cart_total_label">Total</td>
-                                        <td class="cart_total_amount"><strong>{{$totalAfterDiscount}} FCFA</strong></td>
+                                        <td class="cart_total_label">Gesamt</td>
+                                        <td class="cart_total_amount"><strong>{{$totalAfterDiscount}} €</strong></td>
                                     </tr>
                                     @else
                                     <tr>
-                                        <td class="cart_total_label">Cart Tax</td>
-                                        <td class="cart_total_amount">{{Cart::instance('cart')->tax()}} FCFA</td>
+                                        <td class="cart_total_label">Warenkorbsteuer</td>
+                                        <td class="cart_total_amount">{{Cart::instance('cart')->tax()}} €</td>
                                     </tr>
                                     <tr>
-                                        <td class="cart_total_label">Shipping</td>
-                                        <td class="cart_total_amount">Free Shipping</td>
+                                        <td class="cart_total_label">Versand</td>
+                                        <td class="cart_total_amount">Kostenloser Versand</td>
                                     </tr>
                                     <tr>
-                                        <td class="cart_total_label">Total</td>
-                                        <td class="cart_total_amount"><strong>{{Cart::instance('cart')->total()}} FCFA</strong></td>
+                                        <td class="cart_total_label">Gesamt</td>
+                                        <td class="cart_total_amount"><strong>{{Cart::instance('cart')->total()}} €</strong></td>
                                     </tr>
                                     @endif
 
                                 </tbody>
                             </table>
                         </div>
-                        <a href="#" wire:click.prevent="checkout" class="btn btn-fill-out">Proceed To CheckOut</a>
+                        <a href="#" wire:click.prevent="checkout" class="btn btn-fill-out">Zur Kasse</a>
                     </div>
                 </div>
             </div>
 
             @else
             <div class="text-center" style="padding: 30px 0 ;">
-                <h1> Votre panier est vide</h1>
-                <p>Veillez ajouter de nouveau produit</p>
-                <a href="{{route('site.shop')}}" class="btn btn-success">Voir la boutique</a>
+                <h1> Dein Korb ist leer</h1>
+                <p>Stellen Sie sicher, dass Sie ein neues Produkt hinzufügen</p>
+                <a href="{{route('site.shop')}}" class="btn btn-success">Geschäft</a>
             </div>
             @endif
             <div class="row">
@@ -493,10 +494,10 @@
                             <thead>
                                 <tr>
                                     <th class="product-thumbnail">&nbsp;</th>
-                                    <th class="product-name">Product</th>
-                                    <th class="product-price">Price</th>
-                                    <th class="product-remove">Move</th>
-                                    <th class="product-remove">Remove</th>
+                                    <th class="product-name">Produkt</th>
+                                    <th class="product-price">Preis</th>
+                                    <th class="product-remove">Umzug</th>
+                                    <th class="product-remove">Entfernen</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -515,7 +516,7 @@
                                     <td class="product-name" data-title="Product"><a href="#">{{$item->name}}</a></td>
                                     <td class="product-price" data-title="Price">{{$item->price}} FCFA</td>
                                     <td class="product-quantity" data-title="Quantity">
-                                    <p class="text-center"> <a href="" wire:click.prevent ="moveToCart('{{$item->rowId}}')"> Move To Cart</a></p>
+                                    <p class="text-center"> <a href="" wire:click.prevent ="moveToCart('{{$item->rowId}}')"> Wagen</a></p>
                                     </td>
                                     <td class="product-remove" data-title="Remove"><a href="#" wire:click.prevent ="deleteFromSaveForLater('{{$item->rowId}}')"><i class="ti-close"></i></a></td>
                                 </tr>
@@ -525,7 +526,7 @@
                         </table>
                         @else
                             <p class="text-center">
-                                Aucun produit n'a été ajouter
+                                Es wurden keine Produkte hinzugefügt
                             </p>
                         @endif
                     </div>
@@ -536,25 +537,25 @@
     <!-- END SECTION SHOP -->
 
     <!-- START SECTION SUBSCRIBE NEWSLETTER -->
-    <div class="section bg_default small_pt small_pb">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="heading_s1 mb-md-0 heading_light">
-                        <h3>Subscribe Our Newsletter</h3>
+        <div class="section bg_default small_pt small_pb">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="heading_s1 mb-md-0 heading_light">
+                            <h3>Abonnieren Sie unseren Newsletter</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="newsletter_form">
-                        <form>
-                            <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
-                            <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
-                        </form>
+                    <div class="col-md-6">
+                        <div class="newsletter_form">
+                            <form>
+                                <input type="text" required="" class="form-control rounded-0" placeholder="E-Mail Adresse eingeben">
+                                <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Abonnieren</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- START SECTION SUBSCRIBE NEWSLETTER -->
 
     </div>

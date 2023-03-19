@@ -13,14 +13,14 @@
       </style>
 </head>
 <body>
-<h1 class="text-center">Centrale du mobile</h1>
+<h1 class="text-center">Mobiles Zentrum</h1>
 <div>
     <span>$- Informations -$</span>
-    <p>Nom: {{$name}}</p>
-    <p>Telephone: {{$phone}}</p>
+    <p>Name: {{$name}}</p>
+    <p>Telefon: {{$phone}}</p>
 </div>
 <div>
-    Message: <br>
+    Nachricht: <br>
     <pre>
         {{$comment}}
     </pre>

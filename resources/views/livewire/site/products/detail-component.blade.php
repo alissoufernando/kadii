@@ -41,14 +41,14 @@
         <div class="row align-items-center">
         	<div class="col-md-6">
                 <div class="page-title">
-            		<h1>Détails produits</h1>
+            		<h1>Produktdetails</h1>
                 </div>
             </div>
             <div class="col-md-6">
                 <ol class="breadcrumb justify-content-md-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="">Produit</a></li>
-                    <li class="breadcrumb-item active">Détails produits</li>
+                    <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                    <li class="breadcrumb-item"><a href="">Produkt</a></li>
+                    <li class="breadcrumb-item active">Produktdetails</li>
                 </ol>
             </div>
         </div>
@@ -119,13 +119,13 @@
                         <div class="product_price">
 
                             @if ($products->categorie->name == "Bureau")
-                            <span class="price">{{  $t_calcul_attr }} FCFA</span>
+                            <span class="price">{{  $t_calcul_attr }} €</span>
                             @else
-                            <span class="price">{{$products->sale_price}} FCFA</span>
+                            <span class="price">{{$products->sale_price}} €</span>
 
                             {{-- <span class="price">{{  $this->attr_price_click != "" ? $this->attr_price_click :  $products->sale_price}} FCFA</span> --}}
                             @endif
-                            <del>{{$products->normal_price}} FCFA</del>
+                            <del>{{$products->normal_price}} €</del>
                             <div class="on_sale">
                                 <span>35% Off</span>
                             </div>
@@ -312,7 +312,7 @@
                                 </ul>
                         	</div>
                             <div class="review_form field_form">
-                                <h5>Add a review</h5>
+                                <h5>Bewertung hinzufügen</h5>
                                 <form class="row mt-3" wire:submit.prevent='addReview'>
                                     <div class="form-group col-12 mb-3">
                                         <div class="star_rating">
@@ -335,7 +335,7 @@
                                     </div>
 
                                     <div class="form-group col-12 mb-3">
-                                        <button type="submit" class="btn btn-fill-out" name="submit" value="Submit">Submit Review</button>
+                                        <button type="submit" class="btn btn-fill-out" name="submit" value="Submit">Bewertung abschicken</button>
                                     </div>
                                 </form>
                             </div>
@@ -412,7 +412,7 @@
                                 </div>
                                 <div class="add-to-cart">
                                     <a href="#" wire:click.prevent ="store({{$products_relateds->id}},'{{$products_relateds->name}}',{{$products_relateds->sale_price}})" class="btn btn-fill-out btn-radius btn-sm"><i class="icon-basket-loaded"></i>
-                                        Add To Cart</a>
+                                        Hinzufügen</a>
                                 </div>
                             </div>
                         </div>

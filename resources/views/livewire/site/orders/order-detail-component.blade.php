@@ -44,14 +44,14 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="page-title">
-                            <h1>Détails de la commande</h1>
+                            <h1>Einzelheiten der Bestellung</h1>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <ol class="breadcrumb justify-content-md-end">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">mon compte</a></li>
-                            <li class="breadcrumb-item active">Détails de la commande</li>
+                            <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                            <li class="breadcrumb-item"><a href="#">Mein Konto</a></li>
+                            <li class="breadcrumb-item active">Einzelheiten der Bestellung</li>
                         </ol>
                     </div>
                 </div>
@@ -76,14 +76,14 @@
                             <div class="card-header">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <h3>orders detail</h3>
+                                        <h3>Einzelheiten der Bestellung</h3>
                                     </div>
                                     <div class="col-md-6">
                                         <a href="{{ route('site.my-account') }}"
-                                            class="btn btn-success btn-sm float-end"> Les Commandes</a>
+                                            class="btn btn-success btn-sm float-end">Die Aufträge</a>
                                         @if ($order->status == 'ordered')
                                             <a href="" wire:click.prevent="cancelOrder" style="margin-right:20px;"
-                                                class="btn btn-warning btn-sm float-end"> Annuler</a>
+                                                class="btn btn-warning btn-sm float-end"> Stornieren</a>
                                         @endif
                                     </div>
                                 </div>
@@ -91,17 +91,17 @@
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <th>Order ID</th>
+                                        <th>Auftragsnummer</th>
                                         <td>{{ $order->id }}</td>
-                                        <th>date commande</th>
+                                        <th>Auftragsdatum</th>
                                         <td>{{ $order->created_at }}</td>
-                                        <th>Statut</th>
+                                        <th>Status</th>
                                         <td>{{ $order->status }}</td>
                                         @if ($order->status == 'delivrered')
-                                            <th>Delivery date</th>
+                                            <th>Liefertermin</th>
                                             <td>{{ $order->delivered_date }}</td>
                                         @elseif ($order->status == 'canceled')
-                                            <th>cancellation date</th>
+                                            <th>Stornierungsdatum</th>
                                             <td>{{ $order->canceled_date }}</td>
                                         @endif
                                     </table>
@@ -112,7 +112,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Orders</h3>
+                                <h3>Aufträge</h3>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
@@ -120,11 +120,11 @@
                                         <thead>
                                             <tr>
                                                 <th class="product-thumbnail">Image</th>
-                                                <th class="product-name">Product</th>
-                                                <th class="product-price">Price</th>
-                                                <th class="product-quantity">Quantity</th>
-                                                <th class="product-subtotal">Total</th>
-                                                <th class="product-subtotal">Actions</th>
+                                                <th class="product-name">Produkt</th>
+                                                <th class="product-price">Preis</th>
+                                                <th class="product-quantity">Menge</th>
+                                                <th class="product-subtotal">Gesamt</th>
+                                                <th class="product-subtotal">Aktionen</th>
 
                                             </tr>
                                         </thead>
@@ -154,11 +154,11 @@
                                                         </div>
                                                     </td>
                                                     <td class="product-subtotal" data-title="Total">
-                                                        {{ $item->price * $item->quantity }} FCFA</td>
+                                                        {{ $item->price * $item->quantity }} €</td>
 
                                                     <td class="product-subtotal" data-title="Total">
                                                         @if ($order->status == "delivered" && $item->rstatus == false)
-                                                        <a href="{{route('site.detail-produit', ['id' => $item->id])}}"> Wirte Review</a>
+                                                        <a href="{{route('site.detail-produit', ['id' => $item->id])}}"> Bewertung schreiben</a>
                                                         @endif
                                                     </td>
                                                 </tr>
@@ -166,30 +166,30 @@
                                             <tr>
                                                 <td class="product-quantity">
                                                     <h6 class="m-0"> <span
-                                                            class="f-w-600">Subtotal:</span></h6>
+                                                            class="f-w-600">Zwischensumme:</span></h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->subtotal }} FCFA</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->subtotal }} €</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="product-quantity">
-                                                    <h6 class="m-0"> <span class="f-w-600">Tax:</span>
+                                                    <h6 class="m-0"> <span class="f-w-600">Steuer:</span>
                                                     </h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->tax }} FCFA</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->tax }} €</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="product-quantity">
                                                     <h6 class="m-0"> <span
-                                                            class="f-w-600">Shipping:</span></h6>
+                                                            class="f-w-600">Versand:</span></h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">Free Shipping</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">Kostenloser Versand</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="product-quantity">
                                                     <h6 class="m-0"> <span
-                                                            class="f-w-600">Total:</span></h6>
+                                                            class="f-w-600">Gesamt:</span></h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->total }} FCFA</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->total }} €</span></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -200,33 +200,33 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Billing</h3>
+                                <h3>Abrechnung</h3>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
-                                            <th>firstname</th>
+                                            <th>Vorname</th>
                                             <td>{{ $order->firstname }}</td>
-                                            <th>lastname</th>
+                                            <th>Familienname</th>
                                             <td>{{ $order->lastname }}</td>
                                         </tr>
                                         <tr>
-                                            <th>mobile</th>
+                                            <th>Telefon</th>
                                             <td>{{ $order->mobile }}</td>
-                                            <th>email</th>
+                                            <th>E-mail-Adresse</th>
                                             <td>{{ $order->email }}</td>
                                         </tr>
                                         <tr>
-                                            <th>country</th>
+                                            <th>Land</th>
                                             <td>{{ $order->country }}</td>
-                                            <th>Address 1</th>
+                                            <th>Adresse</th>
                                             <td>{{ $order->line1 }}</td>
                                         </tr>
                                         <tr>
-                                            <th>zipcode</th>
+                                            <th>PLZ</th>
                                             <td>{{ $order->zipcode }}</td>
-                                            <th>order date</th>
+                                            <th>Auftragsdatum</th>
                                             <td>{{ $order->created_at }}</td>
                                         </tr>
 
@@ -240,33 +240,33 @@
 
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>shipping Details</h3>
+                                    <h3>Versanddetails</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table">
                                             <tr>
-                                                <th>firstname</th>
+                                                <th>Vorname</th>
                                                 <td>{{ $order->shipping->firstname }}</td>
-                                                <th>lastname</th>
+                                                <th>Familienname</th>
                                                 <td>{{ $order->shipping->lastname }}</td>
                                             </tr>
                                             <tr>
-                                                <th>mobile</th>
+                                                <th>Telefon</th>
                                                 <td>{{ $order->shipping->mobile }}</td>
-                                                <th>email</th>
+                                                <th>E-mail Adresse</th>
                                                 <td>{{ $order->shipping->email }}</td>
                                             </tr>
                                             <tr>
-                                                <th>country</th>
+                                                <th>Land</th>
                                                 <td>{{ $order->shipping->country }}</td>
-                                                <th>Address 1</th>
+                                                <th>Adresse 1</th>
                                                 <td>{{ $order->shipping->line1 }}</td>
                                             </tr>
                                             <tr>
-                                                <th>zipcode</th>
+                                                <th>PLZ</th>
                                                 <td>{{ $order->shipping->zipcode }}</td>
-                                                <th>order date</th>
+                                                <th>Auftragsdatum</th>
                                                 <td>{{ $order->shipping->created_at }}</td>
                                             </tr>
 
@@ -280,18 +280,18 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-header">
-                                <h3>translation details</h3>
+                                <h3>Transaktionsdetails</h3>
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
                                     <table class="table">
                                         <tr>
                                             @if ($order->translation)
-                                                <th>Mode de translation</th>
+                                                <th>Transaktionsmodus</th>
                                                 <td>{{ $order->translation->mode }}</td>
                                                 <th>Status</th>
                                                 <td>{{ $order->translation->status }}</td>
-                                                <th>Date de translation</th>
+                                                <th>Datum der Transaktion</th>
                                                 <td>{{ $order->translation->created_at }}</td>
                                             @endif
                                         </tr>
@@ -307,27 +307,25 @@
         <!-- END SECTION SHOP -->
 
         <!-- START SECTION SUBSCRIBE NEWSLETTER -->
-        <div class="section bg_default small_pt small_pb">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="heading_s1 mb-md-0 heading_light">
-                            <h3>Subscribe Our Newsletter</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="newsletter_form">
-                            <form>
-                                <input type="text" required="" class="form-control rounded-0"
-                                    placeholder="Enter Email Address">
-                                <button type="submit" class="btn btn-dark rounded-0" name="submit"
-                                    value="Submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
+<div class="section bg_default small_pt small_pb">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="heading_s1 mb-md-0 heading_light">
+                    <h3>Abonnieren Sie unseren Newsletter</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="newsletter_form">
+                    <form>
+                        <input type="text" required="" class="form-control rounded-0" placeholder="E-Mail Adresse eingeben">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Abonnieren</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         <!-- START SECTION SUBSCRIBE NEWSLETTER -->
     </div>
     <!-- END MAIN CONTENT -->

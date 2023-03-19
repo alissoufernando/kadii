@@ -43,14 +43,14 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="page-title">
-                        <h1>Checkout</h1>
+                        <h1>Kasse</h1>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ol class="breadcrumb justify-content-md-end">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                        <li class="breadcrumb-item active">Checkout</li>
+                        <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                        <li class="breadcrumb-item"><a href="#">Geschäft</a></li>
+                        <li class="breadcrumb-item active">Kasse</li>
                     </ol>
                 </div>
             </div>
@@ -77,16 +77,16 @@
             <div class="row">
         	<div class="col-md-6">
             	<div class="heading_s1">
-            		<h4>Billing Details</h4>
+            		<h4>Rechnungsdetails</h4>
                 </div>
                     <div class="form-group mb-3">
-                        <input type="text" required class="form-control" name="fname" placeholder="First name *" wire:model="firstname">
+                        <input type="text" required class="form-control" name="fname" placeholder="Vorname*" wire:model="firstname">
                         @error('firstname')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <input type="text" required class="form-control" name="lname" placeholder="Last name *" wire:model="lastname">
+                        <input type="text" required class="form-control" name="lname" placeholder="Familienname*" wire:model="lastname">
                         @error('lastname')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
@@ -94,7 +94,7 @@
                     <div class="form-group mb-3">
                         <div class="custom_select">
                             <select class="form-control" wire:model="country">
-                                <option value="">Select an option...</option>
+                                <option value="">Wähle eine Option...</option>
                                 <option value="AX">Aland Islands</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AL">Albania</option>
@@ -343,44 +343,44 @@
                         </div>
                     </div>
                     <div class="form-group mb-3">
-                        <input type="text" class="form-control" name="billing_address" required="" placeholder="Address *" wire:model="line1">
+                        <input type="text" class="form-control" name="billing_address" required="" placeholder="Adresse*" wire:model="line1">
                         @error('line1')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <input type="text" class="form-control" name="billing_address2" required="" placeholder="Address line2" wire:model="line2">
+                        <input type="text" class="form-control" name="billing_address2" required="" placeholder="Adresse 2" wire:model="line2">
                         @error('line2')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <input class="form-control" required type="text" name="city" placeholder="City / Town *" wire:model="city">
+                        <input class="form-control" required type="text" name="city" placeholder="Stadt / Ort*" wire:model="city">
                         @error('city')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <input class="form-control" required type="text" name="departement" placeholder="departement*" wire:model="departement">
+                        <input class="form-control" required type="text" name="departement" placeholder="Abteilung*" wire:model="departement">
                         @error('departement')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
 
                     <div class="form-group mb-3">
-                        <input class="form-control" required type="text" name="zipcode" placeholder="Postcode / ZIP *" wire:model="zipcode">
+                        <input class="form-control" required type="text" name="zipcode" placeholder="PLZ*" wire:model="zipcode">
                         @error('zipcode')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <input class="form-control" required type="text" name="phone" placeholder="Phone *" wire:model="mobile">
+                        <input class="form-control" required type="text" name="phone" placeholder="Telefon*" wire:model="mobile">
                         @error('mobile')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
                     <div class="form-group mb-3">
-                        <input class="form-control" required type="email" name="email" placeholder="Email address *" wire:model="email">
+                        <input class="form-control" required type="email" name="email" placeholder="E-Mail-Adresse*" wire:model="email">
                         @error('email')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
@@ -394,20 +394,20 @@
                     	<div class="chek-form">
                             <div class="custome-checkbox">
                                 <input class="form-check-input" type="checkbox" name="checkbox" id="differentaddress"  value="1" wire:model="ship_to_different">
-                                <label class="form-check-label label_info" for="differentaddress"><span>Ship to a different address?</span></label>
+                                <label class="form-check-label label_info" for="differentaddress"><span>Zu einer anderen Adresse liefern?</span></label>
                             </div>
                         </div>
                     </div>
                     @if ($ship_to_different)
                     <div class="different_address">
                             <div class="form-group mb-3">
-                                <input type="text" required class="form-control" name="fname" placeholder="First name *" wire:model="s_firstname">
+                                <input type="text" required class="form-control" name="fname" placeholder="Vorname*" wire:model="s_firstname">
                                 @error('s_firstname')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <input type="text" required class="form-control" name="lname" placeholder="Last name *" wire:model="s_lastname">
+                                <input type="text" required class="form-control" name="lname" placeholder="Familienname*" wire:model="s_lastname">
                                 @error('s_lastname')
                                 <span class="text-danger">{{$message}}</span>
                                  @enderror
@@ -415,7 +415,7 @@
                             <div class="form-group mb-3">
                                 <div class="custom_select">
                                     <select class="form-control" wire:model="s_country">
-                                        <option value="">Select an option...</option>
+                                        <option value="">Wähle eine Option...</option>
                                         <option value="AX">Aland Islands</option>
                                         <option value="AF">Afghanistan</option>
                                         <option value="AL">Albania</option>
@@ -667,44 +667,44 @@
                                 </div>
                             </div>
                             <div class="form-group mb-3">
-                                <input type="text" class="form-control" name="billing_address" required="" placeholder="Address *" wire:model="s_line1">
+                                <input type="text" class="form-control" name="billing_address" required="" placeholder="Adresse*" wire:model="s_line1">
                                 @error('s_line1')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <input type="text" class="form-control" name="billing_address2" required="" placeholder="Address line2" wire:model="s_line2">
+                                <input type="text" class="form-control" name="billing_address2" required="" placeholder="Adresse2" wire:model="s_line2">
                                 @error('s_line2')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="city" placeholder="City / Town *" wire:model="s_city">
+                                <input class="form-control" required type="text" name="city" placeholder="Stadt / Ort*" wire:model="s_city">
                                 @error('s_city')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="departement" placeholder="departement*" wire:model="s_departement">
+                                <input class="form-control" required type="text" name="departement" placeholder="Abteilung*" wire:model="s_departement">
                                 @error('s_departement')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
 
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="zipcode" placeholder="Postcode / ZIP *" wire:model="s_zipcode">
+                                <input class="form-control" required type="text" name="zipcode" placeholder="PLZ*" wire:model="s_zipcode">
                                 @error('s_zipcode')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="text" name="phone" placeholder="Phone *" wire:model="s_mobile">
+                                <input class="form-control" required type="text" name="phone" placeholder="Telefon*" wire:model="s_mobile">
                                 @error('s_mobile')
                         <span class="text-danger">{{$message}}</span>
                         @enderror
                             </div>
                             <div class="form-group mb-3">
-                                <input class="form-control" required type="email" name="email" placeholder="Email address *" wire:model="s_email">
+                                <input class="form-control" required type="email" name="email" placeholder="E-Mail-Adresse*" wire:model="s_email">
                                 @error('s_email')
                                 <span class="text-danger">{{$message}}</span>
                                 @enderror
@@ -713,46 +713,46 @@
                     @endif
                     </div>
                     <div class="heading_s1">
-                        <h4>Additional information</h4>
+                        <h4>Weitere Informationen</h4>
                     </div>
                     <div class="form-group mb-0">
-                        <textarea rows="5" class="form-control" placeholder="Order notes"></textarea>
+                        <textarea rows="5" class="form-control" placeholder="Notizen bestellen"></textarea>
                     </div>
 
             </div>
             <div class="col-md-6">
                 <div class="order_review">
                     <div class="heading_s1">
-                        <h4>Your Orders</h4>
+                        <h4>Deine Bestellungen</h4>
                     </div>
                     <div class="table-responsive order_table">
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th>Product</th>
-                                    <th>Total</th>
+                                    <th>Produkt</th>
+                                    <th>Gesamt</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach (Cart::instance('cart')->content() as $item)
                                 <tr>
                                     <td>{{$item->name}} <span class="product-qty">x {{$item->qty}}</span></td>
-                                    <td>{{$item->subtotal}} FCFA</td>
+                                    <td>{{$item->subtotal}} €</td>
                                 </tr>
                                 @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <th>SubTotal</th>
-                                    <td class="product-subtotal">{{Cart::instance('cart')->subtotal()}} FCFA</td>
+                                    <th>Zwischensumme</th>
+                                    <td class="product-subtotal">{{Cart::instance('cart')->subtotal()}} €</td>
                                 </tr>
                                 <tr>
-                                    <th>Shipping</th>
-                                    <td>Free Shipping</td>
+                                    <th>Versand</th>
+                                    <td>Kostenloser Versand</td>
                                 </tr>
                                 <tr>
-                                    <th>Total</th>
-                                    <td class="product-subtotal">{{Cart::instance('cart')->total()}} FCFA</td>
+                                    <th>Gesamt</th>
+                                    <td class="product-subtotal">{{Cart::instance('cart')->total()}} €</td>
                                 </tr>
                             </tfoot>
 
@@ -760,18 +760,18 @@
                     </div>
                     <div class="payment_method">
                         <div class="heading_s1">
-                            <h4>Payment</h4>
+                            <h4>Zahlung</h4>
                         </div>
                         <div class="payment_option">
-                            <div class="custome-radio">
+                            <!--<div class="custome-radio">
                                 <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios3" value="cod" checked="" wire:model="paymentmode">
                                 <label class="form-check-label" for="exampleRadios3">Cash on delivery</label>
                                 <p data-method="option3" class="payment-text">commander maintenant payer à la livraison</p>
-                            </div>
+                            </div>-->
                             <div class="custome-radio">
                                 <input class="form-check-input" type="radio" name="payment_option" id="exampleRadios4" value="card" wire:model="paymentmode">
-                                <label class="form-check-label" for="exampleRadios4">Debit / Credit Card</label>
-                                <p data-method="option4" class="payment-text">StoCounty, Store Postcode.</p>
+                                <label class="form-check-label" for="exampleRadios4">Kreditkarte</label>
+                                <p data-method="option4" class="payment-text">StoCounty, PLZ</p>
                             </div>
                             <div class="custome-radio">
                                 <input class="form-check-input" type="radio" name="payment_option" id="exampleRadios5" value="paypal" wire:model="paymentmode">
@@ -783,7 +783,7 @@
                          <span class="text-danger">{{$message}}</span>
                          @enderror
                     </div>
-                    <button  type="submit" class="btn btn-fill-out btn-block">Place Order</button>
+                    <button  type="submit" class="btn btn-fill-out btn-block">Bestellung aufgeben</button>
 
                 </div>
             </div>
@@ -799,14 +799,14 @@
     	<div class="row align-items-center">
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
-                    <h3>Subscribe Our Newsletter</h3>
+                    <h3>Abonnieren Sie unseren Newsletter</h3>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="newsletter_form">
                     <form>
-                        <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
-                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
+                        <input type="text" required="" class="form-control rounded-0" placeholder="E-Mail Adresse eingeben">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Abonnieren</button>
                     </form>
                 </div>
             </div>
