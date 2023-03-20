@@ -18,7 +18,7 @@ class ShopComponent extends Component
 
     public $min_price;
     public $max_price;
-  
+
 
     public function mount()
     {
@@ -30,9 +30,16 @@ class ShopComponent extends Component
     }
 
     public function store($product_id, $product_name, $product_price){
-        Cart::instance('cart')->add($product_id, $product_name,1, $product_price)->associate(Product::class);
-        session()->flash('message', 'Un produit à été ajouter au panier.');
-        return redirect()->route('site.shop');
+
+        if(Auth::check())
+        {
+            Cart::instance('cart')->add($product_id, $product_name,1, $product_price)->associate(Product::class);
+            session()->flash('message', 'Un produit à été ajouter au panier.');
+            back();
+        }else{
+            return redirect()->route('login');
+
+        }
 
     }
     public function addToWishlist($product_id, $product_name, $product_price){
