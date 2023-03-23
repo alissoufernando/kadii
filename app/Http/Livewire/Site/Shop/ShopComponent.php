@@ -35,7 +35,8 @@ class ShopComponent extends Component
         {
             Cart::instance('cart')->add($product_id, $product_name,1, $product_price)->associate(Product::class);
             session()->flash('message', 'Un produit à été ajouter au panier.');
-            back();
+            return redirect()->route('site.shop');
+
         }else{
             return redirect()->route('login');
 

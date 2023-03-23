@@ -18,6 +18,7 @@ use App\Http\Livewire\Site\Account\AccountComponent;
 use App\Http\Livewire\Site\Contact\ContactComponent;
 use App\Http\Livewire\Site\Products\DetailComponent;
 use App\Http\Livewire\Site\Products\SearchComponent;
+use App\Http\Livewire\Site\Thanks\ThankYouComponent;
 use App\Http\Livewire\Site\Checkout\CheckoutComponent;
 use App\Http\Livewire\Dashboard\Orderss\OrderComponent;
 use App\Http\Livewire\Site\Orders\OrderDetailComponent;
@@ -67,6 +68,7 @@ Route::prefix('site')->group(function () {
     Route::get('/detail-commande/{order_id}', OrderDetailComponent::class)->name('site.detail-order');
     Route::get('/mon-compte', AccountComponent::class)->name('site.my-account');
 
+    Route::get('/thank-you', ThankYouComponent::class)->name('thank.you');
 
     Route::get('/checkout', CheckoutComponent::class)->name('checkout');
 

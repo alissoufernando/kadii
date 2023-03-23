@@ -166,7 +166,7 @@ return [
          * Package Service Providers...
          */
          Intervention\Image\ImageServiceProvider::class ,
-
+         StephaneAss\Payplus\PayplusServiceProvider::class,
         /*
          * Application Service Providers...
          */

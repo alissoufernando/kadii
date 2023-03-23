@@ -9,6 +9,7 @@ use App\Models\Category;
 use App\Models\Shipping;
 use App\Models\OrderItem;
 use App\Models\Transaction;
+use StephaneAss\Payplus\Pay\PayPlus;
 use Illuminate\Support\Facades\Auth;
 
 class CheckoutComponent extends Component
@@ -24,6 +25,7 @@ class CheckoutComponent extends Component
     public $departement;
     public $country;
     public $zipcode;
+    public $transaction_payment;
 
     public $s_firstname;
     public $s_lastname;
@@ -35,6 +37,7 @@ class CheckoutComponent extends Component
     public $s_departement;
     public $s_country;
     public $s_zipcode;
+    public $montant_total;
 
     public $paymentmode;
     public $thankyou;
@@ -154,11 +157,49 @@ class CheckoutComponent extends Component
             $transaction->mode = 'cod';
             $transaction->status = 'pending';
             $transaction->save();
+            $this->transaction_payment = Transaction::latest()->first();
+
         }
+
+
         $this->thankyou = 1;
+        $this->sendRequest();
         Cart::instance('cart')->destroy();
         session()->forget('checkout');
     }
+
+     // fonction pour le paiement
+
+     public function sendRequest()
+     {
+         // n = new Transaction();
+         $this->montant_total = 0;
+         $co = (new PayPlus())->init();
+
+        foreach (Cart::instance('cart')->content() as $item) {
+            $co->addItem($item->name, $item->qty, $item->price, $item->price * $item->qty, $item->name);
+            $this->montant_total += $item->price * $item->qty;
+
+        }
+
+         $total_amount = $this->montant_total;
+         $co->setTotalAmount($total_amount);
+         $co->setDescription("Facture");
+         $co->addCustomData('first_key',$this->transaction_payment->id);
+         // dd($co);
+
+         if($co->create()) {
+
+             // Requête acceptée, alors on redirige le client vers la page de validation de paiement
+             return redirect()->to($co->getInvoiceUrl());
+         }else{
+             // Requête refusée, alors on affiche le motif du rejet
+             return [
+                 "succes" => false,
+                 "message" => "$co->response_text"
+             ];
+         }
+     }
 
     public function verifyForcheckout()
     {
