@@ -46,7 +46,7 @@
             </div>
             <div class="col-md-6 minimenu">
                 <ol class="breadcrumb justify-content-md-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Haus</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item active">Wishlist</li>
                 </ol>
@@ -74,11 +74,11 @@
                     	<thead>
                         	<tr>
                             	<th class="product-thumbnail">&nbsp;</th>
-                                <th class="product-name">Product</th>
-                                <th class="product-price">Price</th>
-                                <th class="product-stock-status">Stock Status</th>
+                                <th class="product-name">Produkt</th>
+                                <th class="product-price">Preis</th>
+                                <th class="product-stock-status">Lagerbestand</th>
                                 <th class="product-add-to-cart"></th>
-                                <th class="product-remove">Remove</th>
+                                <th class="product-remove">Entfernen</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -95,16 +95,16 @@
                                 <td class="product-thumbnail"><a href="#"><img src="{{asset('storage/galerie')}}/{{$images[0]}}" alt="{{$item->name}}"></a></td>
                                 @endempty
                                 <td class="product-name" data-title="Product"><a href="#">{{$item->name}}</a></td>
-                                <td class="product-price" data-title="Price">{{$item->price}} FCFA</td>
-                                <td class="product-stock-status" data-title="Stock Status"><span class="badge badge-pill badge-success">In Stock</span></td>
-                                <td class="product-add-to-cart"><a href="#" wire:click.prevent ="moveProductFromWishlistToCart('{{$item->rowId}}')" class="btn btn-fill-out btn-radius btn-sm "><i class="icon-basket-loaded"></i> Move to Cart</a></td>
+                                <td class="product-price" data-title="Price">{{$item->price}} €</td>
+                                <td class="product-stock-status" data-title="Stock Status"><span class="badge badge-pill badge-success">Auf Lager</span></td>
+                                <td class="product-add-to-cart"><a href="#" wire:click.prevent ="moveProductFromWishlistToCart('{{$item->rowId}}')" class="btn btn-fill-out btn-radius btn-sm "><i class="icon-basket-loaded"></i> Wagen</a></td>
                                 <td class="product-remove" data-title="Remove"><a href="#" wire:click.prevent ="destroy('{{$item->rowId}}')"><i class="ti-close"></i></a></td>
                             </tr>
                             @endforeach
                             @else
                             <tr>
                                 <p>
-                                    Aucun produit n'a été ajouter
+                                    Es wurden keine Produkte hinzugefügt
                                 </p>
                             </tr>
 
@@ -120,18 +120,18 @@
 
 <!-- START SECTION SUBSCRIBE NEWSLETTER -->
 <div class="section bg_default small_pt small_pb">
-	<div class="container">
-    	<div class="row align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
-                    <h3>Subscribe Our Newsletter</h3>
+                    <h3>Abonnieren Sie unseren Newsletter</h3>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="newsletter_form">
                     <form>
-                        <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
-                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
+                        <input type="text" required="" class="form-control rounded-0" placeholder="E-Mail Adresse eingeben">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Abonnieren</button>
                     </form>
                 </div>
             </div>
