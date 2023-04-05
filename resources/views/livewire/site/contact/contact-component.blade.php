@@ -72,7 +72,7 @@
                     </div>
                     <div class="contact_text">
                         <span>Adresse</span>
-                        <p>Aganmadin,Rue avant SBBE Lot 147-d</p>
+                        <p>Adlerstrasse 30 22305 Hamburg</p>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@
                     </div>
                     <div class="contact_text">
                         <span>Telefon</span>
-                        <a href="https://wa.me/+22955221080?text=Bonjour,">+33 00000000</a>
+                        <a href="https://wa.me/004915510782096?text=Bonjour,">004915510782096</a>
                     </div>
                 </div>
             </div>

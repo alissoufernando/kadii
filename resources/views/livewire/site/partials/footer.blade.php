@@ -101,7 +101,7 @@
                                     </div>
                                     <div class="icon_box_content">
                                         <h5>Standort</h5>
-                                        <p>BP: 556 Abomey-Calavi Aganmadin,  </br> Rue avant SBBE Lot 147-d</p>
+                                        <p>Barmbek-Nord  </br> Adlerstrasse 30 22305 Hamburg</p>
                                     </div>
                                 </div>
                             </div>
