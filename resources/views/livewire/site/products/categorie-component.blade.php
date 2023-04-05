@@ -41,13 +41,13 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="page-title">
-                        <h1>Boutique</h1>
+                        <h1>Geschäft</h1>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <ol class="breadcrumb justify-content-md-end">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active"><a href="#">Boutique</a></li>
+                        <li class="breadcrumb-item"><a href="#">Haus</a></li>
+                        <li class="breadcrumb-item active"><a href="#">Geschäft</a></li>
                     </ol>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                                 </div>
                                 <div class="custom_select">
                                     <select class="form-control form-control-sm" wire:model="pagesize">
-                                        <option value="">Showing</option>
+                                        <option value="">Anzeigen</option>
                                         <option value="3">3</option>
                                         <option value="6">6</option>
                                         <option value="9">9</option>
@@ -122,7 +122,7 @@
                             @endempty
                               <div class="product_action_box">
                                   <ul class="list_none pr_action_btn">
-                                      <li class="add-to-cart"><a href="#" wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                      <li class="add-to-cart"><a href="#" wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})"><i class="icon-basket-loaded"></i>Hinzufügen</a></li>
                                       {{-- <li><a href="" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
                                       <li><a href="" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li> --}}
                                       @if ($witems->contains($product->id))
@@ -140,7 +140,7 @@
                                   <span class="price">{{$product->sale_price}} €</span>
                                   <del>{{$product->normal_price }} €</del>
                                   <div class="on_sale">
-                                      <span>35% Off</span>
+                                      <span>35% Rabatt</span>
                                   </div>
                               </div>
                               <div class="rating_wrap">
@@ -221,22 +221,22 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Price: <span class="text-info">{{$min_price}} FCFA - {{$max_price}} FCFA</span></span>
+                        <span>Price: <span class="text-info">{{$min_price}} € - {{$max_price}} €</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>
 
                     </div>
                     <div class="widget">
-                        <h5 class="widget_title">Promotion</h5>
+                        <h5 class="widget_title">Förderung</h5>
                         <div class="shop_banner">
                             <div class="banner_img overlay_bg_20">
                                 <img src="{{asset('assets/images/product/default.png')}}" alt="sidebar_banner_img">
                             </div>
                             <div class="shop_bn_content2 text_white">
-                                <h5 class="text-uppercase shop_subtitle">New Collection</h5>
-                                <h3 class="text-uppercase shop_title">Sale 30% Off</h3>
-                                <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Shop Now</a>
+                                <h5 class="text-uppercase shop_subtitle">Neue Kollektion</h5>
+                                <h3 class="text-uppercase shop_title">Verkauf 30 % Rabatt</h3>
+                                <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Jetzt einkaufen</a>
                             </div>
                         </div>
                     </div>
@@ -253,14 +253,14 @@
     	<div class="row align-items-center">
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
-                    <h3>Subscribe Our Newsletter</h3>
+                    <h3>Abonnieren Sie unseren Newsletter</h3>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="newsletter_form">
                     <form>
-                        <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
-                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
+                        <input type="text" required="" class="form-control rounded-0" placeholder="E-Mail Adresse eingeben">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Abonnieren</button>
                     </form>
                 </div>
             </div>

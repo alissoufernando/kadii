@@ -34,17 +34,17 @@
                 </a>
 
                 @endempty
-                <span class="cart_quantity"> {{$item->qty}}<span class="cart_amount"> X <span class="price_symbole"></span></span>{{$item->price}} FCFA</span>
+                <span class="cart_quantity"> {{$item->qty}}<span class="cart_amount"> X <span class="price_symbole"></span></span>{{$item->price}} €</span>
             </li>
             @endforeach
         </ul>
         <div class="cart_footer">
-            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole"></span></span>{{Cart::instance('cart')->subtotal()}} FCFA</p>
-            <p class="cart_buttons"><a href="{{route('site.shopping-cart')}}" class="btn btn-fill-line view-cart">View Cart</a><a href="#" class="btn btn-fill-out checkout">Checkout</a></p>
+            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span class="price_symbole"></span></span>{{Cart::instance('cart')->subtotal()}} €</p>
+            <p class="cart_buttons"><a href="{{route('site.shopping-cart')}}" class="btn btn-fill-line view-cart">View Cart</a><a href="#" class="btn btn-fill-out checkout">Kasse</a></p>
         </div>
 
         @else
-            <p>Aucun produit n'a été ajouter</p>
+            <p>Es wurde kein Produkt hinzugefügt</p>
         @endif
 
     </div>

@@ -72,10 +72,10 @@
                             <div class="product_header_left">
                                 <div class="custom_select">
                                     <select class="form-control form-control-sm" wire:model="sorting">
-                                        <option value="default">Default sorting</option>
-                                        <option value="date">Sort by date</option>
-                                        <option value="price">Sort by price: low to high</option>
-                                        <option value="price-desc">Sort by price: high to low</option>
+                                        <option value="default">Standard-Sortierung</option>
+                                        <option value="date">Nach Datum sortieren</option>
+                                        <option value="price">Nach Preis sortieren: niedrig bis hoch</option>
+                                        <option value="price-desc">Nach Preis sortieren: hoch bis niedrig</option>
                                     </select>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@
                                 </div>
                                 <div class="custom_select">
                                     <select class="form-control form-control-sm" wire:model="pagesize">
-                                        <option value="">Showing</option>
+                                        <option value="">Anzeigen</option>
                                         <option value="6">6</option>
                                         <option value="9">9</option>
                                         <option value="12">12</option>
@@ -120,7 +120,7 @@
                             @endempty
                               <div class="product_action_box">
                                   <ul class="list_none pr_action_btn">
-                                      <li class="add-to-cart"><a href="#" wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                      <li class="add-to-cart"><a href="#" wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})"><i class="icon-basket-loaded"></i> Hinzufügen</a></li>
                                       {{-- <li><a href="" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
                                       <li><a href="" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li> --}}
                                       @if ($witems->contains($product->id))
@@ -135,10 +135,10 @@
                           <div class="product_info">
                               <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $product->id])}}">{{$product->name}}</a></h6>
                               <div class="product_price">
-                                  <span class="price">{{$product->sale_price}} FCFA</span>
-                                  <del>{{$product->normal_price }} FCFA</del>
+                                  <span class="price">{{$product->sale_price}} €</span>
+                                  <del>{{$product->normal_price }} €</del>
                                   <div class="on_sale">
-                                      <span>35% Off</span>
+                                      <span>35% Rabatt</span>
                                   </div>
                               </div>
                               <div class="rating_wrap">
@@ -159,7 +159,7 @@
                               </div>
                               <div class="list_product_action_box">
                                   <ul class="list_none pr_action_btn">
-                                      <li class="add-to-cart"><a wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})" ><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+                                      <li class="add-to-cart"><a wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})" ><i class="icon-basket-loaded"></i> Hinzufügen</a></li>
                                       <li><a href="shop-compare.html" class="popup-ajax"><i class="icon-shuffle"></i></a></li>
                                       <li><a href="shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
                                       <li><a href="#"><i class="icon-heart"></i></a></li>
@@ -169,7 +169,7 @@
                       </div>
                   </div>
                   @empty
-                  <p>Aucun produit n'est dans la base de données</p>
+                  <p>Es befindet sich kein Produkt in der Datenbank</p>
                  @endforelse
                  {{$products->links()}}
                 </div>
@@ -178,7 +178,7 @@
             <div class="col-lg-3 order-lg-first mt-4 pt-2 mt-lg-0 pt-lg-0">
             	<div class="sidebar">
                 	<div class="widget">
-                        <h5 class="widget_title">Categories</h5>
+                        <h5 class="widget_title">Kategorien</h5>
                         <ul x-data="{ open: false }" class="widget_categories" >
 
                             @foreach($category as $categorys)
@@ -193,22 +193,22 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Price: <span class="text-danger">{{$min_price}} FCFA - {{$max_price}} FCFA</span></span>
+                        <span>Price: <span class="text-danger">{{$min_price}} € - {{$max_price}} €</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>
 
                     </div>
                     <div class="widget">
-                        <h5 class="widget_title">Promotion</h5>
+                        <h5 class="widget_title">Förderung</h5>
                         <div class="shop_banner">
                             <div class="banner_img overlay_bg_20">
                                 <img src="{{asset('assets/images/product/default.png')}}" alt="sidebar_banner_img">
                             </div>
                             <div class="shop_bn_content2 text_white">
-                                <h5 class="text-uppercase shop_subtitle">New Collection</h5>
-                                <h3 class="text-uppercase shop_title">Sale 30% Off</h3>
-                                <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Shop Now</a>
+                                <h5 class="text-uppercase shop_subtitle">Neue Kollektion</h5>
+                                <h3 class="text-uppercase shop_title">Verkauf 30 % Rabatt</h3>
+                                <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Jetzt einkaufen</a>
                             </div>
                         </div>
                     </div>
@@ -221,8 +221,8 @@
 
 <!-- START SECTION SUBSCRIBE NEWSLETTER -->
 <div class="section bg_default small_pt small_pb">
-	<div class="container">
-    	<div class="row align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
                     <h3>Subscribe Our Newsletter</h3>
