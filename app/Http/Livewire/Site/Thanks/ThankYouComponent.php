@@ -23,7 +23,7 @@ class ThankYouComponent extends Component
 
         $co = (new PayPlus())->init();
         $transaction_payment_id = $co->getCustomData('first_key');
-        $myTransaction = Transaction::where('inscription_id',$transaction_payment_id)->first();
+        $myTransaction = Transaction::where('id',$transaction_payment_id)->first();
         if ($co->confirm($token)) {
             // Transaction has successed
             // Perform your success logique here
