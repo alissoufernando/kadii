@@ -137,16 +137,16 @@
                               <div class="product_price">
                                   <span class="price">{{$product->sale_price}} €</span>
                                   <del>{{$product->normal_price }} €</del>
-                                  <div class="on_sale">
+                                  <!--<div class="on_sale">
                                       <span>35% Rabatt</span>
-                                  </div>
+                                  </div>-->
                               </div>
-                              <div class="rating_wrap">
+                              <!--<div class="rating_wrap">
                                   <div class="rating">
                                       <div class="product_rate" style="width:80%"></div>
                                   </div>
                                   <span class="rating_num">(21)</span>
-                              </div>
+                              </div>-->
                               <div class="pr_desc">
                                   <p>{{$product->description }}</p>
                               </div>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Price: <span class="text-danger">{{$min_price}} € - {{$max_price}} €</span></span>
+                        <span>Preis: <span class="text-danger">{{$min_price}} € - {{$max_price}} €</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>
