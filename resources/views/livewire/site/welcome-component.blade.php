@@ -330,15 +330,15 @@
                            <div class="product_info">
                                <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $product->id])}}">{{$product->name}}</a></h6>
                                <div class="product_price">
-                                   <span class="price">{{$product->sale_price}} €</span>
-                                   <del>{{$product->normal_price}} €</del>
+                                   <span class="price">{{$product->sale_price}} {{ $devise_price }}</span>
+                                   <del>{{$product->normal_price}} {{ $devise_price }}</del>
                                </div>
-                               <!--<div class="rating_wrap">
+                               <div class="rating_wrap">
                                    <div class="rating">
                                        <div class="product_rate" style="width:80%"></div>
                                    </div>
                                    <span class="rating_num">(21)</span>
-                               </div>-->
+                               </div>
                                <div class="pr_desc">
                                    <p>{{$product->description}}</p>
                                </div>
@@ -447,15 +447,15 @@
                            <div class="product_info">
                                <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $products_latests->id])}}">{{$products_latests->name}}</a></h6>
                                <div class="product_price">
-                                   <span class="price">{{number_format($products_latests->sale_price,2,"."," ")}} €</span>
-                                   <del>{{$products_latests->normal_price}} €</del>
+                                   <span class="price">{{number_format($products_latests->sale_price,2,"."," ")}} {{ $devise_price }}</span>
+                                   <del>{{$products_latests->normal_price}} {{ $devise_price }}</del>
                                </div>
-                               <!--<div class="rating_wrap">
+                               <div class="rating_wrap">
                                    <div class="rating">
                                        <div class="product_rate" style="width:80%"></div>
                                    </div>
                                    <span class="rating_num">(21)</span>
-                               </div>--->
+                               </div>
                                <div class="pr_desc">
                                    <p>{{$products_latests->description}}</p>
                                </div>

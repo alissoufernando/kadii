@@ -135,28 +135,28 @@
                           <div class="product_info">
                               <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $product->id])}}">{{$product->name}}</a></h6>
                               <div class="product_price">
-                                  <span class="price">{{$product->sale_price}} €</span>
-                                  <del>{{$product->normal_price }} €</del>
-                                  <!--<div class="on_sale">
+                                  <span class="price">{{$product->sale_price}} {{ $devise_price }}</span>
+                                  <del>{{$product->normal_price }} {{ $devise_price }}</del>
+                                  <div class="on_sale">
                                       <span>35% Rabatt</span>
-                                  </div>-->
+                                  </div>
                               </div>
-                              <!--<div class="rating_wrap">
+                              <div class="rating_wrap">
                                   <div class="rating">
                                       <div class="product_rate" style="width:80%"></div>
                                   </div>
                                   <span class="rating_num">(21)</span>
-                              </div>-->
+                              </div>
                               <div class="pr_desc">
                                   <p>{{$product->description }}</p>
                               </div>
-                              <!--<div class="pr_switch_wrap">
+                              <div class="pr_switch_wrap">
                                   <div class="product_color_switch">
                                       <span class="active" data-color="#87554B"></span>
                                       <span data-color="#333333"></span>
                                       <span data-color="#DA323F"></span>
                                   </div>
-                              </div>-->
+                              </div>
                               <div class="list_product_action_box">
                                   <ul class="list_none pr_action_btn">
                                       <li class="add-to-cart"><a wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})" ><i class="icon-basket-loaded"></i> Hinzufügen</a></li>
@@ -193,13 +193,13 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Preis: <span class="text-danger">{{$min_price}} € - {{$max_price}} €</span></span>
+                        <span>Price: <span class="text-danger">{{$min_price}} {{ $devise_price }} - {{$max_price}} {{ $devise_price }}</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>
 
                     </div>
-                    <!--<div class="widget">
+                    <div class="widget">
                         <h5 class="widget_title">Förderung</h5>
                         <div class="shop_banner">
                             <div class="banner_img overlay_bg_20">
@@ -211,7 +211,7 @@
                                 <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Jetzt einkaufen</a>
                             </div>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
             </div>
         </div>

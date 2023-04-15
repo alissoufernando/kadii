@@ -7,6 +7,8 @@ use Livewire\Component;
 
 class AdminContactComponent extends Component
 {
+    public $devise_price = "€";
+
     public $deleteIdBeingRemoved = null;
     protected $listeners = ['deleteConfirmation' => 'deleteContacts'];
     public function deleteContact($id)

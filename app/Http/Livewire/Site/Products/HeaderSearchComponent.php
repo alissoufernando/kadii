@@ -7,6 +7,8 @@ use App\Models\Category;
 
 class HeaderSearchComponent extends Component
 {
+    public $devise_price = "€";
+
     public $search;
     // public $product_cat;
     // public $product_cat_id;

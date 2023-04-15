@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Auth;
 class AccountComponent extends Component
 {
     use WithFileUploads;
+    public $devise_price = "€";
+
 
     public $mobile;
     public $line1;

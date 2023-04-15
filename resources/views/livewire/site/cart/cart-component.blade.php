@@ -91,7 +91,7 @@
                                     <td class="product-thumbnail"><a href="#"><img src="{{asset('storage/galerie')}}/{{$images[0]}}" alt="{{$item->name}}"></a></td>
                                     @endempty
                                     <td class="product-name" data-title="Product"><a href="#">{{$item->name}}</a></td>
-                                    <td class="product-price" data-title="Price">{{$item->price}} €</td>
+                                    <td class="product-price" data-title="Price">{{$item->price}} {{ $devise_price }}</td>
                                     <td class="product-quantity" data-title="Quantity"><div class="quantity">
                                     <input type="button" value="-" class="minus" wire:click.prevent ="decreaseQuantity('{{$item->rowId}}')">
                                     <input type="text" name="quantity" value="{{$item->qty}}" title="Qty" class="qty" size="4">
@@ -99,7 +99,7 @@
                                   </div>
                                   <p class="text-center"> <a href="" wire:click.prevent ="switchToSaveForLater('{{$item->rowId}}')"> Speichern Sie für später</a></p>
                                 </td>
-                                      <td class="product-subtotal" data-title="Total">{{$item->subtotal}} €</td>
+                                      <td class="product-subtotal" data-title="Total">{{$item->subtotal}} {{ $devise_price }}</td>
                                     <td class="product-remove" data-title="Remove"><a href="#" wire:click.prevent ="destroy('{{$item->rowId}}')"><i class="ti-close"></i></a></td>
                                 </tr>
                                 @endforeach
@@ -436,29 +436,29 @@
                                 <tbody>
                                     <tr>
                                         <td class="cart_total_label">Warenkorb Zwischensumme</td>
-                                        <td class="cart_total_amount">{{Cart::instance('cart')->subtotal()}} €</td>
+                                        <td class="cart_total_amount">{{Cart::instance('cart')->subtotal()}} {{ $devise_price }}</td>
                                     </tr>
                                     @if (Session::has('coupon'))
                                     <tr>
                                         <td class="cart_total_label">Rabatt ({{Session::instance('coupon')['code']}}) <a href="#" wire:click.prevent="removeCoupon"> <i class="fa fa-trash-o text-danger"></i> </a> </td>
-                                        <td class="cart_total_amount"> - {{number_format($discount,2)}} €</td>
+                                        <td class="cart_total_amount"> - {{number_format($discount,2)}} {{ $devise_price }}</td>
                                     </tr>
                                     <tr>
                                         <td class="cart_total_label">Warenkorbsteuer ({{config('cart.tax')}}%) </td>
-                                        <td class="cart_total_amount">{{number_format($taxAfterDiscount, 2)}} €</td>
+                                        <td class="cart_total_amount">{{number_format($taxAfterDiscount, 2)}} {{ $devise_price }}</td>
                                     </tr>
                                     <tr>
                                         <td class="cart_total_label">Warenkorb Zwischensumme</td>
-                                        <td class="cart_total_amount">{{number_format($subtotalAfterDiscount,2)}} €</td>
+                                        <td class="cart_total_amount">{{number_format($subtotalAfterDiscount,2)}} {{ $devise_price }}</td>
                                     </tr>
                                     <tr>
                                         <td class="cart_total_label">Gesamt</td>
-                                        <td class="cart_total_amount"><strong>{{$totalAfterDiscount}} €</strong></td>
+                                        <td class="cart_total_amount"><strong>{{$totalAfterDiscount}} {{ $devise_price }}</strong></td>
                                     </tr>
                                     @else
                                     <tr>
                                         <td class="cart_total_label">Warenkorbsteuer</td>
-                                        <td class="cart_total_amount">{{Cart::instance('cart')->tax()}} €</td>
+                                        <td class="cart_total_amount">{{Cart::instance('cart')->tax()}} {{ $devise_price }}</td>
                                     </tr>
                                     <tr>
                                         <td class="cart_total_label">Versand</td>
@@ -466,7 +466,7 @@
                                     </tr>
                                     <tr>
                                         <td class="cart_total_label">Gesamt</td>
-                                        <td class="cart_total_amount"><strong>{{Cart::instance('cart')->total()}} €</strong></td>
+                                        <td class="cart_total_amount"><strong>{{Cart::instance('cart')->total()}} {{ $devise_price }}</strong></td>
                                     </tr>
                                     @endif
 
@@ -514,7 +514,7 @@
                                     @endempty --}}
 
                                     <td class="product-name" data-title="Product"><a href="#">{{$item->name}}</a></td>
-                                    <td class="product-price" data-title="Price">{{$item->price}} FCFA</td>
+                                    <td class="product-price" data-title="Price">{{$item->price}} {{ $devise_price }}</td>
                                     <td class="product-quantity" data-title="Quantity">
                                     <p class="text-center"> <a href="" wire:click.prevent ="moveToCart('{{$item->rowId}}')"> Wagen</a></p>
                                     </td>

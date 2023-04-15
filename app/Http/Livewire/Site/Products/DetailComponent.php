@@ -11,6 +11,8 @@ use App\Models\OrderItem;
 
 class DetailComponent extends Component
 {
+    public $devise_price = "€";
+
     public $product_id;
     public $qty;
     public $order_item_id;
@@ -128,7 +130,7 @@ class DetailComponent extends Component
             'rating' => 'required',
             'comment' => 'required',
         ]);
-        
+
         $orderItem = OrderItem::find($this->order_item_id);
         if($orderItem)
         {

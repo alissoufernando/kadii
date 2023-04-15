@@ -21,6 +21,8 @@ class ProductCreateComponent extends Component
     public $status_stock;
     public $status;
     public $featured;
+    public $devise_price = "€";
+
 
 
     public function resetInputFields()
@@ -78,6 +80,7 @@ class ProductCreateComponent extends Component
     }
     public function render()
     {
+
         $categorie = Category::all();
         return view('livewire.dashboard.product.product-create-component',[
             'categorie' => $categorie,

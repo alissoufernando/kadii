@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\DB;
 
 class OrderComponent extends Component
 {
+    public $devise_price = "€";
+
     public function updateOrderStatus($order_id, $status)
     {
         // dd('ok');

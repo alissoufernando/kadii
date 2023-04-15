@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Auth;
 
 class WelcomeComponent extends Component
 {
+    public $devise_price = "€";
     public function store($product_id, $product_name, $product_price){
         if (Auth::check())
         {

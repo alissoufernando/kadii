@@ -221,7 +221,7 @@
                     </div>
                     <div class="widget">
                     	<h5 class="widget_title">Filter</h5>
-                        <span>Price: <span class="text-info">{{$min_price}} € - {{$max_price}} €</span></span>
+                        <span>Price: <span class="text-info">{{$min_price}} {{ $devise_price }} - {{$max_price}} {{ $devise_price }}</span></span>
                         <div >
                             <div id="slider" wire:ignore ></div>
                         </div>

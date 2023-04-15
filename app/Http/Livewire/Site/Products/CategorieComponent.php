@@ -12,6 +12,8 @@ use App\Models\Subsubcategory;
 
 class CategorieComponent extends Component
 {
+    public $devise_price = "€";
+
     public $sorting;
     use WithPagination;
     protected $paginationTheme = 'bootstrap';

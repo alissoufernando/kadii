@@ -106,7 +106,7 @@
                     <hr>
                     <p>{{ $product->description }}</p>
                     <div class="product-price digits">
-                        <del>${{ $product->normal_price }} </del>${{ $product->sale_price }}
+                        <del>{{ $devise_price }} {{ $product->normal_price }} </del> {{ $devise_price }} {{ $product->sale_price }}
                     </div>
                     <hr>
                     <div>

@@ -7,6 +7,8 @@ use App\Models\Product;
 
 class ShoppingCartCountComponent extends Component
 {
+    public $devise_price = "€";
+
     protected $listeners = ['refreshComponent' => '$refresh'];
     public function render()
     {

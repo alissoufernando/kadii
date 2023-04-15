@@ -162,10 +162,10 @@
                                                 <td>{{$i ++}}</td>
                                                 <td>{{$orders->created_at}}</td>
                                                 <td>{{$orders->status}}</td>
-                                                <td>${{$orders->subtotal}}</td>
-                                                <td>${{$orders->discount}}</td>
-                                                <td>${{$orders->tax}}</td>
-                                                <td>${{$orders->total}}</td>
+                                                <td>{{ $devise_price }} {{$orders->subtotal}}</td>
+                                                <td>{{ $devise_price }} {{$orders->discount}}</td>
+                                                <td>{{ $devise_price }} {{$orders->tax}}</td>
+                                                <td>{{ $devise_price }} {{$orders->total}}</td>
                                                 <td><a href="{{route('site.detail-order',['order_id'=>$orders->id])}}" class="btn btn-fill-out btn-sm">Détail</a></td>
 
                                             </tr>

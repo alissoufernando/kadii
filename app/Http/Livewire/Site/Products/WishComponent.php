@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 class WishComponent extends Component
 {
+    public $devise_price = "€";
+
     public function store($product_id, $product_name, $product_price){
         Cart::instance('cart')->add($product_id, $product_name,1, $product_price)->associate(Product::class);
         session()->flash('message', 'Un produit à été ajouter au panier.');

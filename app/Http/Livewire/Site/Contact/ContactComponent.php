@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactComponent extends Component
 {
+    public $devise_price = "€";
+
     public $name, $email, $phone, $comment,$subject;
 
     public function resetInputFields()
