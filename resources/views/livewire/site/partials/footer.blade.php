@@ -124,7 +124,7 @@
                                     </div>
                                     <div class="icon_box_content">
                                         <h5>Jeden Tag geöffnet</h5>
-                                        <p>Lassen Sie sich beraten </br> <a href="https://wa.me/+33000000?text=Bonjour,">+33 000000</a> </p>
+                                        <p>Lassen Sie sich beraten </br> <a href="https://wa.me/+33000000?text=Bonjour,">004915510782096</a> </p>
                                     </div>
                                 </div>
                             </div>

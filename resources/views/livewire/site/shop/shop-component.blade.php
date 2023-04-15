@@ -150,13 +150,13 @@
                               <div class="pr_desc">
                                   <p>{{$product->description }}</p>
                               </div>
-                              <div class="pr_switch_wrap">
+                              <!--<div class="pr_switch_wrap">
                                   <div class="product_color_switch">
                                       <span class="active" data-color="#87554B"></span>
                                       <span data-color="#333333"></span>
                                       <span data-color="#DA323F"></span>
                                   </div>
-                              </div>
+                              </div>-->
                               <div class="list_product_action_box">
                                   <ul class="list_none pr_action_btn">
                                       <li class="add-to-cart"><a wire:click.prevent ="store({{$product->id}},'{{$product->name}}',{{$product->sale_price}})" ><i class="icon-basket-loaded"></i> Hinzufügen</a></li>
@@ -199,7 +199,7 @@
                         </div>
 
                     </div>
-                    <div class="widget">
+                    <!--<div class="widget">
                         <h5 class="widget_title">Förderung</h5>
                         <div class="shop_banner">
                             <div class="banner_img overlay_bg_20">
@@ -211,7 +211,7 @@
                                 <a href="#" class="btn btn-white rounded-0 btn-sm text-uppercase">Jetzt einkaufen</a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
