@@ -333,12 +333,12 @@
                                    <span class="price">{{$product->sale_price}} {{ $devise_price }}</span>
                                    <del>{{$product->normal_price}} {{ $devise_price }}</del>
                                </div>
-                               <div class="rating_wrap">
+                               <!--<div class="rating_wrap">
                                    <div class="rating">
                                        <div class="product_rate" style="width:80%"></div>
                                    </div>
                                    <span class="rating_num">(21)</span>
-                               </div>
+                               </div>--->
                                <div class="pr_desc">
                                    <p>{{$product->description}}</p>
                                </div>
@@ -450,12 +450,12 @@
                                    <span class="price">{{number_format($products_latests->sale_price,2,"."," ")}} {{ $devise_price }}</span>
                                    <del>{{$products_latests->normal_price}} {{ $devise_price }}</del>
                                </div>
-                               <div class="rating_wrap">
+                               <!--<div class="rating_wrap">
                                    <div class="rating">
                                        <div class="product_rate" style="width:80%"></div>
                                    </div>
                                    <span class="rating_num">(21)</span>
-                               </div>
+                               </div>--->
                                <div class="pr_desc">
                                    <p>{{$products_latests->description}}</p>
                                </div>
