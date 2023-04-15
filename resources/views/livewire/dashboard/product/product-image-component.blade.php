@@ -124,7 +124,7 @@
                         </table>
                     </div>
                     <hr>
-                    <ul class="product-color m-t-15">
+                    <!--<ul class="product-color m-t-15">
                         <li class="bg-primary"></li>
                         <li class="bg-secondary"></li>
                         <li class="bg-success"></li>
@@ -138,7 +138,7 @@
                             data-original-title="btn btn-info-gradien" title="">Quick View</button>
                         <button class="btn btn-success-gradien" type="button" data-original-title="btn btn-info-gradien"
                             title="">Buy Now</button>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

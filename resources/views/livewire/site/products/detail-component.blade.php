@@ -186,7 +186,7 @@
                             <div class="col-sm-6">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="retour"  wire:click.prevent="retour({{$products->priceRetour}})" onclick="this.ckecked = true;">
-                                    <label class="form-check-label" for="exampleCheck1">Retour de Bureau</label>
+                                    <label class="form-check-label" for="exampleCheck1">Retour au bureau</label>
                                 </div>
                             </div>
                             @endif
@@ -398,15 +398,15 @@
                             <div class="product_info">
                                 <h6 class="product_title"><a href="{{route('site.detail-produit', ['id' => $products_relateds->id])}}">{{$products_relateds->name}}</a></h6>
                                 <div class="product_price">
-                                    <span class="price">{{$products_relateds->sale_price}} FCFA</span>
-                                    <del>{{ $products_relateds->normal_price}} FCFA</del>
+                                    <span class="price">{{$products_relateds->sale_price}} €</span>
+                                    <del>{{ $products_relateds->normal_price}} €</del>
                                 </div>
-                                <div class="rating_wrap">
+                                <!--<div class="rating_wrap">
                                     <div class="rating">
                                         <div class="product_rate" style="width:80%"></div>
                                     </div>
                                     <span class="rating_num">(21)</span>
-                                </div>
+                                </div>-->
                                 <div class="pr_desc">
                                     <p>{{$products_relateds->description}}</p>
                                 </div>
