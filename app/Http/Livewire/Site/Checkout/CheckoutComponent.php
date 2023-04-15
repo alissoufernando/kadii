@@ -41,6 +41,8 @@ class CheckoutComponent extends Component
 
     public $paymentmode;
     public $thankyou;
+    public $devise_price = "€";
+
 
     public function updated($fields)
     {
@@ -149,7 +151,7 @@ class CheckoutComponent extends Component
             $shipping->save();
         }
 
-        if($this->paymentmode == 'card')
+        if($this->paymentmode === 'card')
         {
             $transaction = new Transaction();
             $transaction->user_id = Auth::user()->id;
@@ -159,7 +161,6 @@ class CheckoutComponent extends Component
             $transaction->save();
             $this->transaction_payment = Transaction::latest()->first();
             // dd($this->transaction_payment);
-
         }
 
 

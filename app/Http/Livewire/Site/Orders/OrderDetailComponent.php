@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 class OrderDetailComponent extends Component
 {
+    public $devise_price = "€";
+
     public $order_id;
 
     public function mount($order_id)

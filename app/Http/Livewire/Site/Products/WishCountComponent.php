@@ -6,6 +6,8 @@ use Livewire\Component;
 
 class WishCountComponent extends Component
 {
+    public $devise_price = "€";
+
     protected $listeners = ['refreshComponent' => '$refresh'];
     public function render()
     {

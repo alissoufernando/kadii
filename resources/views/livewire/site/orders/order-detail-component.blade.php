@@ -146,7 +146,7 @@
 
                                                     <td class="product-name" data-title="Product"><a
                                                             href="#">{{ $item->product->name }}</a></td>
-                                                    <td class="product-price" data-title="Price">{{ $item->price }} FCFA
+                                                    <td class="product-price" data-title="Price">{{ $item->price }} {{ $devise_price }}
                                                     </td>
                                                     <td class="product-quantity" data-title="Quantity">
                                                         <div class="quantity">
@@ -154,7 +154,7 @@
                                                         </div>
                                                     </td>
                                                     <td class="product-subtotal" data-title="Total">
-                                                        {{ $item->price * $item->quantity }} €</td>
+                                                        {{ $item->price * $item->quantity }} {{ $devise_price }}</td>
 
                                                     <td class="product-subtotal" data-title="Total">
                                                         @if ($order->status == "delivered" && $item->rstatus == false)
@@ -168,14 +168,14 @@
                                                     <h6 class="m-0"> <span
                                                             class="f-w-600">Zwischensumme:</span></h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->subtotal }} €</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->subtotal }} {{ $devise_price }}</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="product-quantity">
                                                     <h6 class="m-0"> <span class="f-w-600">Steuer:</span>
                                                     </h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->tax }} €</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->tax }} {{ $devise_price }}</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="product-quantity">
@@ -189,7 +189,7 @@
                                                     <h6 class="m-0"> <span
                                                             class="f-w-600">Gesamt:</span></h6>
                                                 </td>
-                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->total }} €</span></td>
+                                                <td colspan="4"><span class="float-end" style="margin-right:80px;">{{ $order->total }} {{ $devise_price }}</span></td>
                                             </tr>
                                         </tbody>
                                     </table>

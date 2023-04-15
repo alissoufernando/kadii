@@ -10,6 +10,8 @@ use Livewire\WithPagination;
 class ProductComponent extends Component
 {
     use WithPagination;
+    public $devise_price = "€";
+
     public $deleteIdBeingRemoved = null;
     protected $listeners = ['deleteConfirmation' => 'deleteProducts'];
 

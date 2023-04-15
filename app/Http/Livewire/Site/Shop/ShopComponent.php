@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 
 class ShopComponent extends Component
 {
+    public $devise_price = "€";
+
     use WithPagination;
     protected $paginationTheme = 'bootstrap';
     public $sorting;

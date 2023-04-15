@@ -8,12 +8,14 @@ use Livewire\Component;
 class OrderssDetailComponent extends Component
 {
     public $order_id;
+    public $devise_price = "€";
+
 
     public function mount($order_id)
     {
         $this->order_id = $order_id;
     }
-    
+
     public function render()
     {
         $order = Order::find($this->order_id);

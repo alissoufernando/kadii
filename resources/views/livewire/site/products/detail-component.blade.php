@@ -119,13 +119,13 @@
                         <div class="product_price">
 
                             @if ($products->categorie->name == "Bureau")
-                            <span class="price">{{  $t_calcul_attr }} €</span>
+                            <span class="price">{{  $t_calcul_attr }} {{ $devise_price }}</span>
                             @else
-                            <span class="price">{{$products->sale_price}} €</span>
+                            <span class="price">{{$products->sale_price}} {{ $devise_price }}</span>
 
                             {{-- <span class="price">{{  $this->attr_price_click != "" ? $this->attr_price_click :  $products->sale_price}} FCFA</span> --}}
                             @endif
-                            <del>{{$products->normal_price}} €</del>
+                            <del>{{$products->normal_price}} {{ $devise_price }}</del>
                             <div class="on_sale">
                                 <span>35% Off</span>
                             </div>

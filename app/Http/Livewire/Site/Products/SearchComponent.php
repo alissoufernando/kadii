@@ -9,6 +9,8 @@ use Cart;
 
 class SearchComponent extends Component
 {
+    public $devise_price = "€";
+
     public $sorting;
     public $pagesize;
     public $search;

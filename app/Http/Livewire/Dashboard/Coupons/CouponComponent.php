@@ -7,6 +7,8 @@ use Livewire\Component;
 
 class CouponComponent extends Component
 {
+    public $devise_price = "€";
+
     public $code;
     public $type;
     public $cart_value;

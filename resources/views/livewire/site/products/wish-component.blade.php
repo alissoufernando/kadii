@@ -95,7 +95,7 @@
                                 <td class="product-thumbnail"><a href="#"><img src="{{asset('storage/galerie')}}/{{$images[0]}}" alt="{{$item->name}}"></a></td>
                                 @endempty
                                 <td class="product-name" data-title="Product"><a href="#">{{$item->name}}</a></td>
-                                <td class="product-price" data-title="Price">{{$item->price}} €</td>
+                                <td class="product-price" data-title="Price">{{$item->price}} {{ $devise_price }}</td>
                                 <td class="product-stock-status" data-title="Stock Status"><span class="badge badge-pill badge-success">Auf Lager</span></td>
                                 <td class="product-add-to-cart"><a href="#" wire:click.prevent ="moveProductFromWishlistToCart('{{$item->rowId}}')" class="btn btn-fill-out btn-radius btn-sm "><i class="icon-basket-loaded"></i> Wagen</a></td>
                                 <td class="product-remove" data-title="Remove"><a href="#" wire:click.prevent ="destroy('{{$item->rowId}}')"><i class="ti-close"></i></a></td>

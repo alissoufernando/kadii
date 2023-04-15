@@ -10,6 +10,8 @@ use Livewire\WithFileUploads;
 use Image;
 class ProductImageComponent extends Component
 {
+    public $devise_price = "€";
+
     use WithFileUploads;
     public $fulls,$product_id,$productImage_id, $deleteIdBeingRemoved = null,$array_thumb=[], $array_full=[];
     protected $listeners = ['deleteConfirmation' => 'deleteProductImages'];

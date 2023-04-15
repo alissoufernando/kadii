@@ -737,14 +737,14 @@
                                 @foreach (Cart::instance('cart')->content() as $item)
                                 <tr>
                                     <td>{{$item->name}} <span class="product-qty">x {{$item->qty}}</span></td>
-                                    <td>{{$item->subtotal}} €</td>
+                                    <td>{{$item->subtotal}} {{ $devise_price }}</td>
                                 </tr>
                                 @endforeach
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <th>Zwischensumme</th>
-                                    <td class="product-subtotal">{{Cart::instance('cart')->subtotal()}} €</td>
+                                    <td class="product-subtotal">{{Cart::instance('cart')->subtotal()}} {{ $devise_price }}</td>
                                 </tr>
                                 <tr>
                                     <th>Versand</th>
@@ -752,7 +752,7 @@
                                 </tr>
                                 <tr>
                                     <th>Gesamt</th>
-                                    <td class="product-subtotal">{{Cart::instance('cart')->total()}} €</td>
+                                    <td class="product-subtotal">{{Cart::instance('cart')->total()}} {{ $devise_price }}</td>
                                 </tr>
                             </tfoot>
 

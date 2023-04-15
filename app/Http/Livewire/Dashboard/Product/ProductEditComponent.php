@@ -9,6 +9,8 @@ use Illuminate\Support\Str;
 
 class ProductEditComponent extends Component
 {
+    public $devise_price = "€";
+
     public $name;
     public $slug;
     public $description;
